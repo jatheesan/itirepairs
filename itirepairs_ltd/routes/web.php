@@ -14,5 +14,41 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+
+Route::get('/services', function () {
+    return view('template');
+});
+
+Route::get('/surveillance-system', function () {
+    return view('Services.Surveillance_System');
+});
+
+Route::get('/digital-display', function () {
+    return view('Services.Digital_Display');
+});
+
+Route::get('/network-infrastucture', function () {
+    return view('Services.Network_Infrastucture');
+});
+
+Route::get('/speech-system', function () {
+    return view('Services.Speech_System');
+});
+
+Route::get('/web-development', function () {
+    return view('Services.Web_Development');
+});
+
+Route::get('/wifi-solution', function () {
+    return view('Services.WiFi_Solutions');
+});
+
+Route::get('/about', function () {
+    return view('pages.about');
+});
+
+Route::get('/contact', function () {
+    return view('pages.contact');
 });
