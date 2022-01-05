@@ -214,15 +214,17 @@
                             <div class="services-item">
                                 <div class="services-icon">
                                    <div class="image-part">
-                                       <img src="{{ asset('images/services/style1/1.png') }}" alt=""> 
+                                       <img src="{{ asset('images/services/style1/4.png') }}" alt=""> 
                                    </div>
                                 </div>
                                 <div class="services-content">
                                     <div class="services-text">
-                                       <h3 class="services-title"><a href="web-development.html">Network Infrastucture and Installation</a></h3>
+                                       <h3 class="services-title"><a href="{{ url('/network-infrastucture') }}">Network Infrastucture and Installation</a></h3>
                                     </div>
                                     <div class="services-desc">
-                                       <p>Quisque placerat vitae lacus ut scelerisque fusce luctus odio ac nibh luctu. scelerisque fusce luctus odio</p>
+                                       <p>Rack Cabinet Installation, NAS and other services</p>
+                                       <p>Fiber optic Networking, Cat6 and Cat7 Cabling and Terminatios</p>
+                                       <br>
                                     </div>
                                 </div>
                             </div>
@@ -231,16 +233,19 @@
                            <div class="services-item">
                                <div class="services-icon">
                                    <div class="image-part">
-                                       <img src="{{ asset('images/services/style1/1.png') }}" alt="">  
+                                       <img src="{{ asset('images/services/style1/10.png') }}" alt="">  
                                    </div>
                                </div>
                                <div class="services-content">
                                    <div class="services-text">
-                                       <h3 class="services-title"><a href="web-development.html">Surveillance System Installation</a></h3>
+                                       <h3 class="services-title"><a href="{{ url('/surveillance-system') }}">Surveillance System Installation</a></h3>
                                    </div>
                                    <div class="services-desc">
                                        <p>
-                                          Quisque placerat vitae lacus ut scelerisque fusce luctus odio ac nibh luctu.
+                                           <strong>Hikvision</strong> - [ANPR, Thermal imaging & temperature monitoring, ColorVU]
+                                       </p>
+                                       <p>
+                                           <strong>Axis</strong> - [CCTV, Thermal imaging cameras, video management & analytics, IP audio & access control systems]
                                        </p>
                                    </div>
                                </div>
@@ -250,17 +255,20 @@
                            <div class="services-item">
                                <div class="services-icon">
                                    <div class="image-part">
-                                       <img src="{{ asset('images/services/style1/1.png') }}" alt="">  
+                                       <img src="{{ asset('images/services/style1/9.png') }}" alt="">  
                                    </div>
                                </div>
                                <div class="services-content">
                                    <div class="services-text">
-                                       <h3 class="services-title"><a href="web-development.html">Digital Display and Advertisement Screens</a></h3>
+                                       <h3 class="services-title"><a href="{{ url('/digital-display') }}">Digital Display and Advertisement Screens</a></h3>
                                    </div>
                                    <div class="services-desc">
                                        <p>
-                                         Quisque placerat vitae lacus ut scelerisque fusce luctus odio ac nibh luctu.
+                                         LED Display modules,
                                        </p>
+                                       <p>samsung and LG commercial TV installation and services</p>
+                                       <br>
+                                       <br>
                                    </div>
                                </div>
                            </div> 
@@ -269,17 +277,18 @@
                            <div class="services-item">
                                <div class="services-icon">
                                    <div class="image-part">
-                                       <img src="{{ asset('images/services/style1/1.png') }}" alt=""> 
+                                       <img src="{{ asset('images/services/style1/3.png') }}" alt=""> 
                                    </div>
                                </div>
                                <div class="services-content">
                                    <div class="services-text">
-                                       <h3 class="services-title"><a href="web-development.html">Speech Transfer System</a></h3>
+                                       <h3 class="services-title"><a href="{{ url('/wifi-solution') }}">Commercial WiFi Solutions and Access control</a></h3>
                                    </div>
                                    <div class="services-desc">
                                        <p>
-                                          Quisque placerat vitae lacus ut scelerisque fusce luctus odio ac nibh luctu.
+                                          Cisco Meraki, Aruba and Ubiquity networks Wifi solutions
                                        </p>
+                                       <br>
                                    </div>
                                </div>
                            </div> 
@@ -288,17 +297,19 @@
                            <div class="services-item">
                                <div class="services-icon">
                                    <div class="image-part">
-                                       <img src="{{ asset('images/services/style1/1.png') }}" alt=""> 
+                                       <img src="{{ asset('images/services/style1/5.png') }}" alt=""> 
                                    </div>
                                </div>
                                <div class="services-content">
                                    <div class="services-text">
-                                       <h3 class="services-title"><a href="web-development.html">Commercial WiFi Solutions and Access control</a></h3>
+                                       <h3 class="services-title"><a href="{{ url('/speech-system') }}">Speech Transfer System</a></h3>
                                    </div>
                                    <div class="services-desc">
                                        <p>
-                                          Quisque placerat vitae lacus ut scelerisque fusce luctus odio ac nibh luctu.
+                                          Contacta and Amptronics Windows Intercom
                                        </p>
+                                       <br>
+                                       <br>
                                    </div>
                                </div>
                            </div> 
@@ -307,21 +318,32 @@
                            <div class="services-item">
                                <div class="services-icon">
                                    <div class="image-part">
-                                       <img src="{{ asset('images/services/style1/1.png') }}" alt=""> 
+                                       <img src="{{ asset('images/services/style1/2.png') }}" alt=""> 
                                    </div>
                                </div>
                                <div class="services-content">
                                    <div class="services-text">
-                                       <h3 class="services-title"><a href="web-development.html">Web Development</a></h3>
+                                       <h3 class="services-title"><a href="{{ url('/web-development') }}">Web Development and Hosting</a></h3>
                                    </div>
                                    <div class="services-desc">
                                        <p>
-                                          Quisque placerat vitae lacus ut scelerisque fusce luctus odio ac nibh luctu.
+                                        Laravel, PHP, Pyton with LEMP, LAMP or AWS, Domains and Hosting Packages, Personal Emails,Payment Gateways
                                        </p>
                                    </div>
                                </div>
                            </div> 
                         </div>
+                    </div>
+                    {{--<div class="btn-part text-center mt-65">
+                        <a class="readon learn-more contact-us" href="web-development.html">View All Services</a>
+                    </div>--}}
+                </div>
+                <div class="shape-part">
+                    <div class="left-side">
+                        <img src="{{ asset('images/services/shape-2.png') }}" alt=""> 
+                    </div>
+                    <div class="right-side">
+                        <img src="{{ asset('images/services/shape-3.png') }}" alt=""> 
                     </div>
                 </div>
             </div>
@@ -398,110 +420,7 @@
             <!-- Counter Section End -->
 
             <!-- Services Section Start -->
-            <div class="rs-services style4 modify1 services3 gray-color pt-120 md-pt-80">
-                {{--<div class="container">
-                    <div class="sec-title2 text-center mb-45">
-                        <span class="sub-text">Services</span>
-                        <h2 class="title">
-                           We Are Offering All Kinds of IT Solutions Services
-                        </h2>
-                    </div>
-                </div>--}}
-                <div class="bg-section pb-120 md-pb-80">
-                    <div class="container">
-                        <div class="row gray-color pb-35 pl-25 pr-25 md-pl-0 md-pr-0">
-                            <div class="col-lg-4 col-md-6 mb-20">
-                                <div class="services-item">
-                                    <div class="services-icon">
-                                        <img src="{{ asset('images/services/style1/1.png') }}" alt="">
-                                    </div>
-                                    <div class="services-content">
-                                        <h2 class="title"><a href="software-development.html">Software Development</a></h2>
-                                        <p class="desc">
-                                            At vero eos et accusamus etiusto odio praesentium accusamus etiusto odio data center.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 mb-20">
-                                <div class="services-item">
-                                    <div class="services-icon">
-                                        <img src="assets/images/services/main-home/icons/2.png" alt="">
-                                    </div>
-                                    <div class="services-content">
-                                        <h2 class="title"><a href="web-development.html">Web Development</a></h2>
-                                        <p class="desc">
-                                            At vero eos et accusamus etiusto odio praesentium accusamus etiusto odio data center.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 mb-20">
-                                <div class="services-item">
-                                    <div class="services-icon">
-                                        <img src="assets/images/services/main-home/icons/3.png" alt="">
-                                    </div>
-                                    <div class="services-content">
-                                        <h2 class="title"><a href="analytic-solutions.html">Analytic Solutions</a></h2>
-                                        <p class="desc">
-                                            At vero eos et accusamus etiusto odio praesentium accusamus etiusto odio data center.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 md-mb-20">
-                                <div class="services-item">
-                                    <div class="services-icon">
-                                        <img src="assets/images/services/main-home/icons/4.png" alt="">
-                                    </div>
-                                    <div class="services-content">
-                                        <h2 class="title"><a href="cloud-and-devops.html">Clould & DevOps</a></h2>
-                                        <p class="desc">
-                                            At vero eos et accusamus etiusto odio praesentium accusamus etiusto odio data center.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 sm-mb-20">
-                                <div class="services-item">
-                                    <div class="services-icon">
-                                        <img src="assets/images/services/main-home/icons/5.png" alt="">
-                                    </div>
-                                    <div class="services-content">
-                                        <h2 class="title"><a href="product-design.html">Product & Design</a></h2>
-                                        <p class="desc">
-                                            At vero eos et accusamus etiusto odio praesentium accusamus etiusto odio data center.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="services-item">
-                                    <div class="services-icon">
-                                        <img src="assets/images/services/main-home/icons/6.png" alt="">
-                                    </div>
-                                    <div class="services-content">
-                                        <h2 class="title"><a href="data-center.html">Data Center</a></h2>
-                                        <p class="desc">
-                                            At vero eos et accusamus etiusto odio praesentium accusamus etiusto odio data center.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="btn-part text-center mt-65">
-                            <a class="readon learn-more contact-us" href="web-development.html">View All Services</a>
-                        </div>
-                    </div>
-                    <div class="shape-part">
-                        <div class="left-side">
-                           <img src="assets/images/services/shape-2.png" alt=""> 
-                        </div>
-                        <div class="right-side">
-                            <img src="assets/images/services/shape-3.png" alt=""> 
-                        </div>
-                    </div>
-                </div>
+            {{--<div class="rs-services style4 modify1 services3 gray-color pt-120 md-pt-80">
             </div>
             <!-- Services Section End -->
 
@@ -583,7 +502,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <!-- Partner End -->
 
         </div> 
