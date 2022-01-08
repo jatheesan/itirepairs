@@ -371,7 +371,7 @@
                                     <p class="desc">Have any idea or project for in your mind call us or schedule a appointment. Our representative will reply you shortly.</p>
                                 </div>
                                 <div class="btn-part mt-40 md-mb-60">
-                                    <a class="readon lets-talk" href="contact.html">Let's Talk</a>
+                                    <a class="readon lets-talk" href="{{ url('/contact') }}">Let's Talk</a>
                                 </div>
                             </div>
                         </div> 

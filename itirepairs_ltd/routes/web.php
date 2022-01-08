@@ -1,7 +1,10 @@
 <?php
 
+use App\Mail\ContactMail;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 use Laravel\Socialite\Facades\Socialite;
+use App\Http\Controllers\SendEmailController;
 use App\Http\Controllers\Auth\GoogleController;
 
 /*
@@ -61,3 +64,10 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/auth/google/redirect', [GoogleController::class, 'handleGoogleRedirect'])->name('login.google');
 
 Route::get('/auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
+
+Route::get('/email', function() {
+    Mail::to('boxroomrent@gmail.com')->send(new ContactMail());
+    return new ContactMail();
+});
+
+Route::post('/sendmail/send', [SendEmailController::class, 'sendcontactmail']);

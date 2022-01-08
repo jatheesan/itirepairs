@@ -30,7 +30,7 @@
                             </div>
                             <div class="address-text">
                                 <span class="label">Email:</span>
-                                <a href="tel:123222-8888">info@ITiRepairs.co.uk</a>
+                                <a href="mailto:info@ITiRepairs.co.uk">info@ITiRepairs.co.uk</a>
                             </div>
                         </div>
                         <div class="address-box mb-25">
@@ -58,33 +58,42 @@
                         <div class="sec-title2 mb-40">
                             <span class="sub-text contact mb-15">Get In Touch</span>
                             <h2 class="title testi-title">Fill The Form Below</h2>
-
                         </div>
-                        <div id="form-messages"></div>
-                        <form id="contact-form" method="post"
-                            action="https://rstheme.com/products/html/braintech/mailer.php">
+                        <div id="form-messages">
+                            @if(count($errors) > 0)
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach($errors->all() as $error)
+                                    <li>{{ $error}}</li>
+                                    @endforeach
+                                </ul>
+                                <button type="button" class="btn-close" aria-label="Close" data-bs-dismiss="alert"></button>
+                            </div>
+                            @endif
+
+                            @if($message = Session::get('success'))
+                            <div class="alert alert-success alert-block">
+                                <strong>{{ $message }}</strong>
+                                <button type="button" class="btn-close" aria-label="Close" data-bs-dismiss="alert"></button>
+                            </div>
+                             @endif
+                        </div>
+                        <form action="{{ url('/sendmail/send') }}" method="post">
+                        {{ csrf_field() }}
                             <fieldset>
                                 <div class="row">
-                                    <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
-                                        <input class="from-control" type="text" id="name" name="name" placeholder="Name"
-                                            required="">
+                                    <div class="col-lg-12 mb-30 col-md-12 col-sm-12">
+                                        <input class="from-control" type="text" id="email" name="email" placeholder="E-Mail" required="">
                                     </div>
                                     <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
-                                        <input class="from-control" type="text" id="email" name="email"
-                                            placeholder="E-Mail" required="">
+                                        <input class="from-control" type="text" id="name" name="name" placeholder="Name" required="">
                                     </div>
                                     <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
-                                        <input class="from-control" type="text" id="phone" name="phone"
-                                            placeholder="Phone Number" required="">
+                                        <input class="from-control" type="text" id="phone" name="phone" placeholder="Phone Number" required="">
                                     </div>
-                                    <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
-                                        <input class="from-control" type="text" id="website" name="website"
-                                            placeholder="Your Website" required="">
-                                    </div>
-
+                                    <input type="hidden" id="subject" name="subject" value="I need your service" required="">
                                     <div class="col-lg-12 mb-30">
-                                        <textarea class="from-control" id="message" name="message"
-                                            placeholder="Your message Here" required=""></textarea>
+                                        <textarea class="from-control" id="message" name="message" placeholder="Your message Here" required=""></textarea>
                                     </div>
                                 </div>
                                 <div class="btn-part">
