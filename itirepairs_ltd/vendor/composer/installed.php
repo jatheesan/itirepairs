@@ -1,12 +1,12 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => 'v8.6.10',
-    'version' => '8.6.10.0',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => '621ac13fae1c1fddc17f3481d8ad678dd35167ad',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -431,12 +431,12 @@
     ),
     'laravel/laravel' => 
     array (
-      'pretty_version' => 'v8.6.10',
-      'version' => '8.6.10.0',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => '621ac13fae1c1fddc17f3481d8ad678dd35167ad',
     ),
     'laravel/sail' => 
     array (
@@ -465,6 +465,15 @@
       ),
       'reference' => '25de3be1bca1b17d52ff0dc02b646c667ac7266c',
     ),
+    'laravel/socialite' => 
+    array (
+      'pretty_version' => 'v5.2.6',
+      'version' => '5.2.6.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'b5c67f187ddcf15529ff7217fa735b132620dfac',
+    ),
     'laravel/tinker' => 
     array (
       'pretty_version' => 'v2.6.3',
@@ -473,6 +482,15 @@
       array (
       ),
       'reference' => 'a9ddee4761ec8453c584e393b393caff189a3e42',
+    ),
+    'laravel/ui' => 
+    array (
+      'pretty_version' => 'v3.4.1',
+      'version' => '3.4.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '9a1e52442dd238647905b98d773d59e438eb9f9d',
     ),
     'league/commonmark' => 
     array (
@@ -509,6 +527,15 @@
       array (
       ),
       'reference' => 'aa70e813a6ad3d1558fc927863d47309b4c23e69',
+    ),
+    'league/oauth1-client' => 
+    array (
+      'pretty_version' => 'v1.10.0',
+      'version' => '1.10.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '88dd16b0cff68eb9167bfc849707d2c40ad91ddc',
     ),
     'mockery/mockery' => 
     array (
@@ -812,8 +839,8 @@
     array (
       'provided' => 
       array (
-        0 => '1.0|2.0',
-        1 => '1.0.0 || 2.0.0 || 3.0.0',
+        0 => '1.0.0 || 2.0.0 || 3.0.0',
+        1 => '1.0|2.0',
       ),
     ),
     'psr/simple-cache' => 
