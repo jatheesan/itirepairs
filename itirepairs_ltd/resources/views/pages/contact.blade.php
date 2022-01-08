@@ -95,6 +95,10 @@
                                     <div class="col-lg-12 mb-30">
                                         <textarea class="from-control" id="message" name="message" placeholder="Your message Here" required=""></textarea>
                                     </div>
+                                    <div class="col-lg-12 mb-30">
+                                        {!! NoCaptcha::renderJs() !!}
+                                        {!! NoCaptcha::display() !!}
+                                    </div>
                                 </div>
                                 <div class="btn-part">
                                     <div class="form-group mb-0">

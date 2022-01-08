@@ -16,6 +16,7 @@ class SendEmailController extends Controller
             'name' => 'required',
             'phone' => 'required',
             'message' => 'required',
+            'g-recaptcha-response' => 'required|captcha'
         ]);
 
         $mail_data = array(
