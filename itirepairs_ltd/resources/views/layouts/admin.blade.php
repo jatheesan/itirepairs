@@ -92,13 +92,13 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="index.html">
+        <a class="nav-link " href="{{ url('/home') }}">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link collapsed" href="index.html">
+        <a class="nav-link collapsed" href="{{ url('/services/view') }}">
           <i class="bi bi-menu-button-wide"></i>
           <span>Services</span>
         </a>
@@ -117,11 +117,11 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-    <h1>Dashboard</h1>
+    <h1>@yield('pagetitle')</h1>
     <nav>
         <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-        <li class="breadcrumb-item active">Dashboard</li>
+        <li class="breadcrumb-item active">@yield('pagetitle')</li>
         </ol>
     </nav>
     </div><!-- End Page Title -->
@@ -131,7 +131,7 @@
   </main>
 
   <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
+  <footer id="footer" class="footer mt-auto fixed-bottom">
     <div class="copyright">
       &copy; Copyright <strong></strong>. All Rights Reserved
     </div>

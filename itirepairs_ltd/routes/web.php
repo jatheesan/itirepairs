@@ -4,6 +4,7 @@ use App\Mail\ContactMail;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 use Laravel\Socialite\Facades\Socialite;
+use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\SendEmailController;
 use App\Http\Controllers\Auth\GoogleController;
 
@@ -71,3 +72,8 @@ Route::get('/email', function() {
 });
 
 Route::post('/sendmail/send', [SendEmailController::class, 'sendcontactmail']);
+
+Route::get('/services/view', [ServiceController::class, 'index'])->name('service.view');
+Route::post('/services/store', [ServiceController::class, 'store'])->name('service.store');
+Route::patch('/services/update/{id}', [ServiceController::class, 'update'])->name('service.update');
+Route::delete('/services/delete/{id}', [ServiceController::class, 'destroy'])->name('service.delete');
