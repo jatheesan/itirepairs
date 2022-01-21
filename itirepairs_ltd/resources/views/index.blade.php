@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>itirepairs</title>
+    <link rel="shortcut icon" href="{{ asset('images/itislide-5.png')}}">
 
     <!-- Bootstrap v4.4.1 css -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">

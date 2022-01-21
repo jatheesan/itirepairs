@@ -5,9 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Service extends Model
+class ServiceImage extends Model
 {
     use HasFactory;
+
+    /**
+     * The database table used by the model.
+     *
+     * @var string
+     */
+    protected $table = 'service_images';
 
     /**
      * The primary key associated with the table.
@@ -29,11 +36,17 @@ class Service extends Model
      * @var array<int, string>
      */
     protected $fillable = [
-        'service_name'
+        'image', 'is_main', 'service_id'
     ];
 
-    public function images()
+    /**
+     * Get the serviceid for this model.
+     *
+     * @return App\Models\Proparty
+     */
+    public function service()
     {
-        return $this->hasMany('App\Models\ServiceImage','service_id');
+        return $this->belongsTo('App\Models\Service','service_id');
     }
+
 }

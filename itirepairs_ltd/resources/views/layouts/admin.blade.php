@@ -104,7 +104,7 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link collapsed" href="index.html">
+        <a class="nav-link collapsed" href="{{ url('/images/view') }}">
           <i class="bi bi-slack"></i>
           <span>Images</span>
         </a>

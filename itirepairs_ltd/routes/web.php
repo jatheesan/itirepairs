@@ -7,6 +7,7 @@ use Laravel\Socialite\Facades\Socialite;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\SendEmailController;
 use App\Http\Controllers\Auth\GoogleController;
+use App\Http\Controllers\ServiceImageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -73,7 +74,16 @@ Route::get('/email', function() {
 
 Route::post('/sendmail/send', [SendEmailController::class, 'sendcontactmail']);
 
-Route::get('/services/view', [ServiceController::class, 'index'])->name('service.view');
-Route::post('/services/store', [ServiceController::class, 'store'])->name('service.store');
-Route::patch('/services/update/{id}', [ServiceController::class, 'update'])->name('service.update');
-Route::delete('/services/delete/{id}', [ServiceController::class, 'destroy'])->name('service.delete');
+Route::group(['middleware' => ['auth']], function() {
+
+    Route::get('/services/view', [ServiceController::class, 'index'])->name('service.view');
+    Route::post('/services/store', [ServiceController::class, 'store'])->name('service.store');
+    Route::patch('/services/update/{id}', [ServiceController::class, 'update'])->name('service.update');
+    Route::delete('/services/delete/{id}', [ServiceController::class, 'destroy'])->name('service.delete');
+
+    Route::get('/images/view', [ServiceImageController::class, 'index'])->name('image.view');
+    Route::post('/images/store', [ServiceImageController::class, 'store'])->name('image.store');
+    Route::patch('/images/update/{id}', [ServiceImageController::class, 'update'])->name('image.update');
+    Route::delete('/images/delete/{id}', [ServiceImageController::class, 'destroy'])->name('image.delete');
+
+});
