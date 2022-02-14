@@ -10863,3 +10863,28 @@ body .search-modal .close:hover {
     transform: none;
   }
 }
+
+.image-3da{
+  border-radius: 50px;
+  background: #e0e0e0;
+  width: 150%;
+  height: 100%;
+  box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+
+.image-3db{
+  border-radius: 50px;
+  background: #e0e0e0;
+  width: 150%;
+  height: 100%;
+  box-shadow:  -20px 20px 60px #bebebe,
+             20px -20px 60px #ffffff;
+}
+
+.li-bold{
+  font-weight: bold; 
+  font-size: 1.1em;
+  text-align: justify;
+  color:  #0476D0;
+}
