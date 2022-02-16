@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="{{ asset('images/itislide-5.png')}}">
 
     <!-- Bootstrap v4.4.1 css -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
     <!-- font-awesome css -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/font-awesome.min.css') }}">
     <!-- flaticon css -->
@@ -90,7 +90,7 @@
                             <div class="row align-items-center">
                                 <div class="col-lg-3">
                                     <div class="logo-part">
-                                        <a href="{{ url('/') }}"><img src="{{ asset('images/itislide-3.png') }}" alt=""></a>
+                                        <a href="{{ url('/') }}" class="mobile-logo"><img src="{{ asset('images/itislide-3.png') }}" alt="itirepaire"></a>
                                     </div>
                                     <div class="mobile-menu">
                                         <a href="#" class="rs-menu-toggle rs-menu-toggle-close secondary">
@@ -106,7 +106,7 @@
                                                     <li>
                                                         <a href="{{ url('/') }}">Home</a>
                                                     </li>
-                                                    <li>
+                                                    <li class="menu-item-has-children current-menu-item">
                                                        <a href="#">Services</a>
                                                        <ul class="sub-menu">
                                                         <li><a href="{{ url('/network-infrastucture') }}">Network Infrastucture and Installation</a></li>
@@ -143,32 +143,6 @@
                     <!-- Menu End --> 
                 </header>
                 <!--Header End-->
-                <!-- Canvas Menu start -->
-                {{-- <nav class="right_menu_togle hidden-md">
-                    <div class="close-btn"><span id="nav-close" class="text-center"><i class="fa fa-close"></i></span></div>
-                    <div class="canvas-logo">
-                        <a href="{{ url('/') }}"><img src="{{ asset('images/itislide-2.png') }}" alt="logo"></a>
-                    </div>
-                    <div class="offcanvas-text">
-                        <p>Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English.</p>
-                    </div>
-                    <div class="canvas-contact">
-                        <h5 class="canvas-contact-title">Contact Info</h5>
-                        <ul class="contact">
-                            <li><i class="fa fa-globe"></i>Middle Badda, Dhaka, BD</li>
-                            <li><i class="fa fa-phone"></i>+123445789</li>
-                            <li><i class="fa fa-envelope"></i><a href="mailto:info@yourcompany.com">info@yourcompany.com</a></li>
-                            <li><i class="fa fa-clock-o"></i>10:00 AM - 11:30 PM</li>
-                        </ul>
-                        <ul class="social">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </nav> --}}
-                <!-- Canvas Menu end -->
             </div>
             <!--Full width header End-->
          
@@ -177,7 +151,7 @@
                 <div class="rs-carousel owl-carousel" data-loop="true" data-items="1" data-margin="0" data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="1" data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="1" data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="1" data-md-device-nav="true" data-md-device-dots="false">
                     <div class="slider-content slide1" style="background-image: url('{{ asset('images/slider/slider-1-1.jpg')}}');">
                         <div class="container">
-                            <div class="content-part">
+                            <div class="content-part text-center">
                                 <div class="sl-sub-title wow bounceInLeft" data-wow-delay="300ms" data-wow-duration="2000ms">Enabling The Success of</div>
                                 <h1 class="sl-title mb-mb-10 wow fadeInRight" data-wow-delay="600ms" data-wow-duration="2000ms">Your Business</h1>
                                 <div class="sl-desc wow fadeInUp" data-wow-delay="900ms" data-wow-duration="2000ms">
@@ -208,14 +182,14 @@
             <!-- Slider Section End -->
 
             <!-- Services Section Start -->
-            <div class="rs-services main-home style1 pt-100 md-pt-70">
+            <div class="rs-services main-home style1 pt-100 md-pt-0">
                 <div class="container">
                     <div class="row pb-35 pl-25 pr-25 md-pl-0 md-pr-0">
                         <div class="col-lg-4 col-md-6 mb-20">
                             <div class="services-item">
                                 <div class="services-icon">
                                    <div class="image-part">
-                                       <img src="{{ asset('images/services/style1/4.png') }}" alt=""> 
+                                       <img src="{{ asset('images/services/style1/4.png') }}" alt="itirepaire"> 
                                    </div>
                                 </div>
                                 <div class="services-content">
@@ -234,7 +208,7 @@
                            <div class="services-item">
                                <div class="services-icon">
                                    <div class="image-part">
-                                       <img src="{{ asset('images/services/style1/10.png') }}" alt="">  
+                                       <img src="{{ asset('images/services/style1/10.png') }}" alt="itirepaire">  
                                    </div>
                                </div>
                                <div class="services-content">
@@ -256,7 +230,7 @@
                            <div class="services-item">
                                <div class="services-icon">
                                    <div class="image-part">
-                                       <img src="{{ asset('images/services/style1/9.png') }}" alt="">  
+                                       <img src="{{ asset('images/services/style1/9.png') }}" alt="itirepaire">  
                                    </div>
                                </div>
                                <div class="services-content">
@@ -278,7 +252,7 @@
                            <div class="services-item">
                                <div class="services-icon">
                                    <div class="image-part">
-                                       <img src="{{ asset('images/services/style1/3.png') }}" alt=""> 
+                                       <img src="{{ asset('images/services/style1/3.png') }}" alt="itirepaire"> 
                                    </div>
                                </div>
                                <div class="services-content">
@@ -298,7 +272,7 @@
                            <div class="services-item">
                                <div class="services-icon">
                                    <div class="image-part">
-                                       <img src="{{ asset('images/services/style1/5.png') }}" alt=""> 
+                                       <img src="{{ asset('images/services/style1/5.png') }}" alt="itirepaire"> 
                                    </div>
                                </div>
                                <div class="services-content">
@@ -319,7 +293,7 @@
                            <div class="services-item">
                                <div class="services-icon">
                                    <div class="image-part">
-                                       <img src="{{ asset('images/services/style1/2.png') }}" alt=""> 
+                                       <img src="{{ asset('images/services/style1/2.png') }}" alt="itirepaire"> 
                                    </div>
                                </div>
                                <div class="services-content">
@@ -335,16 +309,13 @@
                            </div> 
                         </div>
                     </div>
-                    {{--<div class="btn-part text-center mt-65">
-                        <a class="readon learn-more contact-us" href="web-development.html">View All Services</a>
-                    </div>--}}
                 </div>
                 <div class="shape-part d-none d-sm-block">
                     <div class="left-side">
-                        <img src="{{ asset('images/services/shape-2.png') }}" alt=""> 
+                        <img src="{{ asset('images/services/shape-2.png') }}" alt="itirepaire"> 
                     </div>
                     <div class="right-side">
-                        <img src="{{ asset('images/services/shape-3.png') }}" alt=""> 
+                        <img src="{{ asset('images/services/shape-3.png') }}" alt="itirepaire"> 
                     </div>
                 </div>
             </div>
@@ -356,7 +327,7 @@
                     <div class="row rs-vertical-middle">
                         <div class="col-lg-6">
                             <div class="image-part">
-                              <img src="{{ asset('images/call-us/contact-here.png') }}" alt="">
+                              <img src="{{ asset('images/call-us/contact-here.png') }}" alt="itirepaire">
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -367,8 +338,8 @@
                                     </div>
                                 </div>
                                 <div class="sec-title3">
-                                    <span class="sub-text">CALL US 24/7</span>
-                                    <h2 class="title">(+123) 456-9989</h2>
+                                    <span class="sub-text">CALL US</span>
+                                    <h2 class="title">07889 121 609</h2>
                                     <p class="desc">Have any idea or project for in your mind call us or schedule a appointment. Our representative will reply you shortly.</p>
                                 </div>
                                 <div class="btn-part mt-40 md-mb-60">
@@ -516,7 +487,7 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-12 col-sm-12 footer-widget">
                             <div class="footer-logo mb-30">
-                                <a href="index-2.html"><img src="{{ asset('images/itislide-3.png') }}" alt=""></a>
+                                <a href="index-2.html"><img src="{{ asset('images/itislide-3.png') }}" alt="itirepaire"></a>
                             </div>
                               <div class="textwidget pb-30"><p>We help free up your time, money and valuable resources, allowing you to focus on taking your business to the next level of efficiency and strategic value.</p>
                               </div>
@@ -601,7 +572,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="copyright">
-                                <p>&copy; 2021 All Rights Reserved. Developed By <a href="http://itirepairs.co.uk/">ITIrepairs</a></p>
+                                <p>&copy; 2022 All Rights Reserved. Developed By <a href="http://itirepairs.co.uk/">ITIrepairs</a></p>
                             </div>
                         </div>
                         

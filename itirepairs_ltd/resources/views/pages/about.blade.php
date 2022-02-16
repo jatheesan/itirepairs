@@ -6,7 +6,7 @@
         <div class="breadcrumbs-inner text-center">
             <h1 class="page-title">About</h1>
             <ul>
-                <li title="Braintech - IT Solutions and Technology Startup HTML Template">
+                <li>
                     <a class="active" href="index.html">Home</a>
                 </li>
                 <li>About</li>
@@ -17,7 +17,7 @@
 
     <!-- Breadcrumbs Start -->
     <div class="d-md-none text-center gray-color">
-            <h2 class="pt-5 hm">About</h2>
+            <h2 class="pt-20 md-pt-10 hm">About</h2>
             <ul>
                 <li class="hm">
                     <a class="active" href="index.html"><u>Home</u> / </a>About
@@ -28,7 +28,7 @@
     <!-- Breadcrumbs End -->
 
     <!-- About Section Start -->
-    <div class="rs-about gray-color pt-120 pb-120 md-pt-80 md-pb-80">
+    <div class="rs-about gray-color pt-20 pb-20 md-pt-10 md-pb-10">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 md-mb-30">

@@ -5,24 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>itirepairs</title>
+    <link rel="shortcut icon" href="{{ asset('images/itislide-5.png')}}">
 
-    <!-- Bootstrap v4.4.1 css -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
+    <!-- Bootstrap v5.1.3 css -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
     <!-- font-awesome css -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/font-awesome.min.css') }}">
     <!-- flaticon css -->
     <link rel="stylesheet" type="text/css" href="{{ asset('fonts/flaticon.css') }}">
     <!-- animate css -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/animate.css') }}">
-    <!-- owl.carousel css -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/owl.carousel.css') }}">
-    <!-- slick css -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/slick.css') }}">
-    <!-- off canvas css -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/off-canvas.css') }}">
     <!-- magnific popup css -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/magnific-popup.css') }}">
-    <!-- Main Menu css -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/rsmenu-main.css') }}">
     <!-- spacing css -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/rs-spacing.css') }}">
@@ -52,7 +45,7 @@
                             <div class="row rs-vertical-middle">
                                 <div class="col-lg-2">
                                     <div class="logo-part">
-                                        <a href="{{ url('/') }}"><img src="{{ asset('images/itislide-3.png') }}" alt=""></a>
+                                        <a href="{{ url('/') }}"><img src="{{ asset('images/itislide-3.png') }}" alt="itirepaire"></a>
                                     </div>
                                 </div>
                                 <div class="col-lg-10 text-right">
@@ -92,14 +85,14 @@
                         <div class="container">
                             <div class="logo-area">
                                 <a href="{{ url('/') }}">
-                                    <img class="sticky-logo" src="{{ asset('images/itislide-3.png') }}" alt="logo">
+                                    <img class="sticky-logo" src="{{ asset('images/itislide-3.png') }}" alt="itirepaire">
                                 </a>
                             </div>
                             <div class="rs-menu-area">
                                 <div class="main-menu">
                                     <div class="mobile-menu">
                                         <a href="{{ url('/') }}" class="mobile-logo">
-                                            <img src="{{ asset('images/itislide-3.png') }}" alt="logo">
+                                            <img src="{{ asset('images/itislide-3.png') }}" alt="itirepaire">
                                         </a>
                                         <a href="#" class="rs-menu-toggle rs-menu-toggle-close">
                                             <i class="fa fa-bars"></i>
@@ -132,13 +125,13 @@
                                 </div> <!-- //.main-menu -->                                
                             </div>
                             <div class="expand-btn-inner search-icon hidden-sticky hidden-md">
-                                <ul>
+                                <!-- <ul>
                                     <li class="sidebarmenu-search">
-                                        <a class="hidden-xs rs-search" data-target=".search-modal" data-toggle="modal" href="#">
+                                        <a class="hidden-xs rs-search pr-0" data-target=".search-modal" data-toggle="modal" href="#">
                                             <i class="flaticon-search"></i>
                                         </a>
                                     </li>
-                                </ul>
+                                </ul> -->
                                 <div class="toolbar-sl-share">
                                     <ul class="social">
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -174,7 +167,7 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-12 col-sm-12 footer-widget">
                             <div class="footer-logo mb-30">
-                                <a href="index-2.html"><img src="{{ asset('images/itislide-3.png') }}" alt=""></a>
+                                <a href="index-2.html"><img src="{{ asset('images/itislide-3.png') }}" alt="itirepaire"></a>
                             </div>
                               <div class="textwidget pb-30"><p>Sedut perspiciatis unde omnis iste natus error sitlutem acc usantium doloremque denounce with illo inventore veritatis</p>
                               </div>
@@ -259,7 +252,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="copyright">
-                                <p>&copy; 2021 All Rights Reserved. Developed By <a href="http://itirepairs.co.uk/">ITIrepairs</a></p>
+                                <p>&copy; 2022 All Rights Reserved. Developed By <a href="http://itirepairs.co.uk/">ITIrepairs</a></p>
                             </div>
                         </div>
                         
@@ -294,39 +287,22 @@
         </div>
         <!-- Search Modal End -->
 
-    <!-- modernizr js -->
-    <script src="{{ asset('js/modernizr-2.8.3.min.js') }}"></script>
-    <!-- jquery latest version -->
-    <script src="{{ asset('js/jquery.min.js') }}"></script>
-    <!-- Bootstrap v4.4.1 js -->
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <!-- Menu js -->
-    <script src="{{ asset('js/rsmenu-main.js') }}"></script> 
-    <!-- op nav js -->
-    <script src="{{ asset('js/jquery.nav.js') }}"></script>
-    <!-- owl.carousel js -->
-    <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
-    <!-- wow js -->
-    <script src="{{ asset('js/wow.min.js') }}"></script>
-    <!-- Skill bar js -->
-    <script src="{{ asset('js/skill.bars.jquery.js') }}"></script>
-    <script src="{{ asset('js/jquery.counterup.min.js') }}"></script> 
-    <!-- counter top js -->
-    <script src="{{ asset('js/waypoints.min.js') }}"></script>
-    <!-- swiper js -->
-    <script src="{{ asset('js/swiper.min.js') }}"></script>   
-    <!-- particles js -->
-    <script src="{{ asset('js/particles.min.js') }}"></script>  
-    <!-- magnific popup js -->
-    <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>      
-    <!-- plugins js -->
-    <script src="{{ asset('js/plugins.js') }}"></script>
-    <!-- pointer js -->
-    <script src="{{ asset('js/pointer.js') }}"></script>
-    <!-- contact form js -->
-    <script src="{{ asset('js/contact.form.js') }}"></script>
-    <!-- main js -->
-    <script src="{{ asset('js/main.js') }}"></script>
-    </body>
+        <!-- modernizr js -->
+        <script src="{{ asset('js/modernizr-2.8.3.min.js') }}"></script>
+        <!-- jquery latest version -->
+        <script src="{{ asset('js/jquery.min.js') }}"></script>
+        <!-- Bootstrap v5.1.3 js -->
+        <script src="{{ asset('js/app.js') }}"></script>
+        <!-- Menu js -->
+        <script src="{{ asset('js/rsmenu-main.js') }}"></script> 
+        <!-- op nav js -->
+        <script src="{{ asset('js/jquery.nav.js') }}"></script>
+        <!-- wow js -->
+        <script src="{{ asset('js/wow.min.js') }}"></script>
+        <!-- contact form js -->
+        <script src="{{ asset('js/contact.form.js') }}"></script>
+        <!-- main js -->
+        <script src="{{ asset('js/main.js') }}"></script>
+        </body>
 
 </html>

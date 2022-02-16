@@ -16,7 +16,7 @@
 
     <!-- Breadcrumbs Start -->
     <div class="d-sm-none text-center">
-            <h2 class="pt-5 hm">Contact</h2>
+            <h2 class="pt-20 md-pt-10 hm">Contact</h2>
             <ul>
                 <li class="hm">
                     <a class="active" href="index.html"><u>Home</u> / </a>Contact
@@ -27,10 +27,10 @@
     <!-- Breadcrumbs End -->
 
     <!-- Contact Section Start -->
-    <div class="rs-contact pt-120 md-pt-80">
+    <div class="rs-contact pt-20 md-pt-10">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 md-mb-60">
+                <div class="col-lg-4 md-mb-10">
                     <div class="contact-box">
                         <div class="sec-title mb-45">
                             <span class="sub-text new-text white-color">Let's Talk</span>
@@ -67,7 +67,7 @@
                 </div>
                 <div class="col-lg-8 pl-70 md-pl-15">
                     <div class="contact-widget">
-                        <div class="sec-title2 mb-40">
+                        <div class="sec-title2 mb-10">
                             <span class="sub-text contact mb-15">Get In Touch</span>
                             <h2 class="title testi-title">Fill The Form Below</h2>
                         </div>
@@ -123,7 +123,7 @@
                 </div>
             </div>
         </div>
-        <div class="map-canvas pt-120 md-pt-80">
+        <div class="map-canvas pt-20 md-pt-10 caroimage">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4295.5522106969!2d0.04747267675281565!3d51.54184897892906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a64c60b0e545%3A0x94c4e728f6e9644e!2sITI%20Repairs%20Ltd!5e0!3m2!1sen!2slk!4v1640517930088!5m2!1sen!2slk" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </div>

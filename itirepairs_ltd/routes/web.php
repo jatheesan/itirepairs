@@ -29,30 +29,12 @@ Route::get('/services', function () {
     return view('template');
 });
 
-Route::get('/surveillance-system', function () {
-    return view('Services.Surveillance_System');
-});
-
-Route::get('/digital-display', function () {
-    return view('Services.Digital_Display');
-});
-
-// Route::get('/network-infrastucture', function () {
-//     return view('Services.Network_Infrastucture');
-// });
 Route::get('/network-infrastucture', [ServicePagesController::class, 'network_index']);
-
-Route::get('/speech-system', function () {
-    return view('Services.Speech_System');
-});
-
-Route::get('/web-development', function () {
-    return view('Services.Web_Development');
-});
-
-Route::get('/wifi-solution', function () {
-    return view('Services.WiFi_Solutions');
-});
+Route::get('/surveillance-system', [ServicePagesController::class, 'cctv_index']);
+Route::get('/digital-display', [ServicePagesController::class, 'screen_index']);
+Route::get('/speech-system', [ServicePagesController::class, 'speech_index']);
+Route::get('/web-development', [ServicePagesController::class, 'web_index']);
+Route::get('/wifi-solution', [ServicePagesController::class, 'wifi_index']);
 
 Route::get('/about', function () {
     return view('pages.about');
