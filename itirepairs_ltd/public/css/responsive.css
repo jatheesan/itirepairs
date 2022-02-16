@@ -771,7 +771,8 @@
     }
 
     .rs-counter.main-counter-home {
-        margin-top: 80px;
+        margin-top: 30px;
+        margin-bottom: 30px;
         position: unset;
         min-width: unset;
         right: unset;

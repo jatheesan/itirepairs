@@ -178,13 +178,13 @@
                     <div class="slider-content slide1" style="background-image: url('{{ asset('images/slider/slider-1-1.jpg')}}');">
                         <div class="container">
                             <div class="content-part">
-                                <div class="sl-sub-title wow bounceInLeft" data-wow-delay="300ms" data-wow-duration="2000ms">Top-North Software</div>
-                                <h1 class="sl-title mb-mb-10 wow fadeInRight" data-wow-delay="600ms" data-wow-duration="2000ms">Development</h1>
+                                <div class="sl-sub-title wow bounceInLeft" data-wow-delay="300ms" data-wow-duration="2000ms">Enabling The Success of</div>
+                                <h1 class="sl-title mb-mb-10 wow fadeInRight" data-wow-delay="600ms" data-wow-duration="2000ms">Your Business</h1>
                                 <div class="sl-desc wow fadeInUp" data-wow-delay="900ms" data-wow-duration="2000ms">
-                                    Using modern technogoly & modern frameworks
+                                by Taking Care of Your IT Needs
                                 </div>
                                 <div class="sl-btn wow fadeInUp" data-wow-delay="200ms" data-wow-duration="3000ms">
-                                    <a class="readon learn-more slider-btn" href="about.html">Get in touch</a>
+                                    <a class="readon learn-more slider-btn" href="{{ url('/about') }}">Get in touch</a>
                                 </div>
                             </div>
                         </div>
@@ -198,7 +198,7 @@
                                     Using modern technogoly and IT Services
                                 </div>
                                 <ul class="slider-btn wow fadeInRight" data-wow-delay="200ms" data-wow-duration="3000ms">
-                                    <li><a class="readon learn-more slider-btn" href="about.html">Free Consultation</a></li>
+                                    <li><a class="readon learn-more slider-btn" href="{{ url('/contact') }}">Free Consultation</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -339,7 +339,7 @@
                         <a class="readon learn-more contact-us" href="web-development.html">View All Services</a>
                     </div>--}}
                 </div>
-                <div class="shape-part">
+                <div class="shape-part d-none d-sm-block">
                     <div class="left-side">
                         <img src="{{ asset('images/services/shape-2.png') }}" alt=""> 
                     </div>
@@ -518,7 +518,7 @@
                             <div class="footer-logo mb-30">
                                 <a href="index-2.html"><img src="{{ asset('images/itislide-3.png') }}" alt=""></a>
                             </div>
-                              <div class="textwidget pb-30"><p>Sedut perspiciatis unde omnis iste natus error sitlutem acc usantium doloremque denounce with illo inventore veritatis</p>
+                              <div class="textwidget pb-30"><p>We help free up your time, money and valuable resources, allowing you to focus on taking your business to the next level of efficiency and strategic value.</p>
                               </div>
                               <ul class="footer-social md-mb-30">  
                                   <li> 
@@ -594,9 +594,9 @@
                             <ul class="copy-right-menu">
                                 <li><a href="{{ url('/') }}">Home</a></li>
                                 <li><a href="{{ url('/about') }}">About</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="shop.html">Shop</a></li>
-                                <li><a href="faq.html">FAQs</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Shop</a></li>
+                                <li><a href="#">FAQs</a></li>
                             </ul>
                         </div>
                         <div class="col-lg-6">

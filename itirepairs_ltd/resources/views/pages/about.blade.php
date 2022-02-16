@@ -49,14 +49,20 @@
                                 We Are Increasing Business Success With Technology
                             </h2>
                             <div class="desc pb-35">
-                                Over 25 years working in IT services developing software applications and mobile apps
-                                for clients all over the world.
+                            ITi Repairs© Ltd is located on the High Street in East Ham, a popular town situated in East London. 
+                            Our customers are from all over England, allowing us to gradually expand our business through the word 
+                            of mouth and through the recommendations from our valued customers. Our dedicated and experienced staff 
+                            will restore your laptop or desktop to optimal condition, as it deserves a second chance. With a multi-facility 
+                            lab and an in-house workshop, we ensure that your repair work is completed smoothly and efficiently. 
                             </div>
                             <p class="margin-0 pb-15">
-                                We denounce with righteous indignation and dislike men who are so beguiled and
-                                demoralized by the charms of pleasure of the moment, so blinded by desire, that they
-                                cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to
-                                those who fail in their duty through weakness of will, which is the same as saying.
+                            Additionally, ITi Repairs© Ltd offers an excellent level of services for our customers other than computer repairs. 
+                            We also install CCTV systems, set up remote surveillance systems, and provide bespoke web design as well as small business networking.
+                            Our new wing of educational services provides a hands-on experience for students in electronic design and simulation software. 
+                            We request students to register for a hands-on session for Raspberry Pi designs/developments and programming*. 
+                            </p>
+                            <p class="atext">
+                            *Some of these services require tutor guided classes which may be chargeable.
                             </p>
                         </div>
                         <div class="btn-part">
