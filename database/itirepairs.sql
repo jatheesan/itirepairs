@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 14, 2022 at 03:37 PM
+-- Generation Time: Feb 16, 2022 at 06:29 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -139,15 +139,34 @@ CREATE TABLE `service_images` (
 --
 
 INSERT INTO `service_images` (`id`, `image`, `is_main`, `service_id`, `created_at`, `updated_at`) VALUES
-(1, 'images/service/1642686553.jpg', 1, 2, NULL, '2022-01-20 20:57:49'),
-(2, 'images/service/1642686553.jpg', 0, 2, NULL, NULL),
-(3, 'images/service/1642686573.jpg', 0, 2, NULL, NULL),
-(4, 'images/service/1642686573.jpg', 0, 2, NULL, NULL),
-(5, 'images/service/1642686750.jpg', 0, 4, NULL, NULL),
-(6, 'images/service/1642686750.jpg', 0, 4, NULL, NULL),
-(7, 'images/service/1722482016372656.jpg', 0, 2, NULL, NULL),
-(8, 'images/service/1722482016395048.jpg', 0, 2, NULL, NULL),
-(9, 'images/service/1722482016398954.jpg', 1, 2, NULL, NULL);
+(18, 'images/service/1724754995588083.jpg', 1, 3, NULL, NULL),
+(19, 'images/service/1724755035575389.jpg', NULL, 3, NULL, NULL),
+(20, 'images/service/1724756525615516.jpg', 1, 1, NULL, NULL),
+(21, 'images/service/1724756542478442.jpg', NULL, 1, NULL, NULL),
+(22, 'images/service/1724756552699911.jpg', NULL, 2, NULL, NULL),
+(23, 'images/service/1724756564745548.jpg', NULL, 6, NULL, NULL),
+(24, 'images/service/1724756579795450.jpg', NULL, 4, NULL, NULL),
+(25, 'images/service/1724756592769372.jpg', NULL, 5, NULL, NULL),
+(26, 'images/service/1724756641633754.jpg', NULL, 6, NULL, NULL),
+(27, 'images/service/1724756664563914.jpg', 1, 2, NULL, NULL),
+(28, 'images/service/1724756685033796.jpg', NULL, 4, NULL, NULL),
+(29, 'images/service/1724756734293858.jpg', NULL, 3, NULL, NULL),
+(30, 'images/service/1724756757355081.jpg', NULL, 2, NULL, NULL),
+(31, 'images/service/1724756769296100.jpg', NULL, 1, NULL, NULL),
+(32, 'images/service/1724756782879718.jpg', 1, 5, NULL, NULL),
+(33, 'images/service/1724756798362888.jpg', NULL, 5, NULL, NULL),
+(34, 'images/service/1724756830250984.webp', NULL, 2, NULL, NULL),
+(35, 'images/service/1724756852042390.jpg', 1, 6, NULL, NULL),
+(36, 'images/service/1724756931592420.jpg', NULL, 5, NULL, NULL),
+(37, 'images/service/1724756954561088.jpg', NULL, 1, NULL, NULL),
+(38, 'images/service/1724756993647399.jpg', NULL, 5, NULL, NULL),
+(39, 'images/service/1724757032069511.jpg', NULL, 2, NULL, NULL),
+(40, 'images/service/1724821311529248.jpg', NULL, 6, NULL, NULL),
+(41, 'images/service/1724821446011675.jpg', NULL, 2, NULL, NULL),
+(42, 'images/service/1724821580024753.jpg', 1, 4, NULL, NULL),
+(43, 'images/service/1724821649092196.jpg', NULL, 3, NULL, NULL),
+(44, 'images/service/1724821785073595.jpg', NULL, 1, NULL, NULL),
+(45, 'images/service/1724821904909091.jpg', NULL, 5, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -258,13 +277,13 @@ ALTER TABLE `services`
 -- AUTO_INCREMENT for table `service_images`
 --
 ALTER TABLE `service_images`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
