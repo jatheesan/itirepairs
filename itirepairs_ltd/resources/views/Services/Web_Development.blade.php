@@ -1,20 +1,20 @@
 @extends('template')
 @section('content')
     <!-- About Section Start -->
-    <div class="rs-about pt-20">
+    <div class="rs-about pt-10">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <div class="contact-wrap">
                         <div class="sec-title mb-30">
                             <div class="sub-text style2"><a class="active" href="{{ url('/') }}">Home</a><span> / </span><a class="active" href="{{ url('/') }}"> Services</a><span> / Web Development</span></div>
-                            <h2 class="title pb-38">
+                            <h2 class="title pb-10">
                                 Web Development And Hosting
                             </h2>
                             <div class="pb-15 li-bold">
                                 Over 25 years working in Web development.
                             </div>
-                            <p class="margin-0 pb-15 li-bold">
+                            <p class="margin-0 pb-10 li-bold">
                             Our expert designers focus on modern web design practices that facilitate the growth of your business.
                             Take a look at what goes behind in creating award winning websites that take
                             your business to the next level.
@@ -29,87 +29,78 @@
     <!-- About Section End -->
 
     <!-- Services Single Start -->
-    <div class="rs-services-single pt-20">
+    <div class="rs-services-single pt-10">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 d-none d-lg-block">
                     <img src="{{ asset('images/s-web/web5.jpg')}}" class="mx-auto d-block image-3db" alt="itirepaire">
                 </div>
-                <div class="col-lg-6 px-5 pt-4">
+                <div class="col-lg-6 px-5 pt-4 zero-padding">
+                    <img src="{{ asset('images/s-web/web5.jpg')}}" class="d-lg-none image-3db" alt="itirepaire">
                     <ul class="listing-style li-bold">
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>we take the time to learn about the objectives you want to achieve.</span>
+                            <span><i class="fa fa-check-circle"></i>we take the time to learn about the objectives you want to achieve.</span>
                         </li>
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>We research your needs, brand, and corporate identity before deciding on the best strategy for online success.</span>
+                            <span><i class="fa fa-check-circle"></i>We research your needs, brand, and corporate identity before deciding on the best strategy for online success.</span>
                         </li>
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>our professional website designers will sketch up the fundamental design concepts.</span>
+                            <span><i class="fa fa-check-circle"></i>our professional website designers will sketch up the fundamental design concepts.</span>
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-6 py-5 px-5 pt-4">
+                <div class="col-lg-6 py-5 px-5 pt-4 zero-padding">
+                    <img src="{{ asset('images/s-web/web6.jpg')}}" class="d-lg-none image-3da" alt="itirepaire">
                     <ul class="listing-style li-bold">
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>Our lead web designers will then work on transforming your blueprints into completed design layouts once the basic version has been developed.</span>
+                            <span><i class="fa fa-check-circle"></i>Our lead web designers will then work on transforming your blueprints into completed design layouts once the basic version has been developed.</span>
                         </li>
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>If you are unable to supply specific content, we will complete the layout using dummy content while our content team works on producing top quality content for your website.</span>
+                            <span><i class="fa fa-check-circle"></i>If you are unable to supply specific content, we will complete the layout using dummy content while our content team works on producing top quality content for your website.</span>
                         </li>
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>Our web development team will work on building a gorgeous website while focusing on usability and responsive web design.</span>
+                            <span><i class="fa fa-check-circle"></i>Our web development team will work on building a gorgeous website while focusing on usability and responsive web design.</span>
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-6 py-5">
+                <div class="col-lg-6 py-5 d-none d-lg-block">
                     <img src="{{ asset('images/s-web/web6.jpg')}}" class="mx-auto d-block image-3da" alt="itirepaire">
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 d-none d-lg-block">
                     <img src="{{ asset('images/s-web/web3.jpg')}}" class="mx-auto d-block image-3db" alt="itirepaire">
                 </div>
-                <div class="col-lg-6 px-5 pt-4">
+                <div class="col-lg-6 px-5 pt-4 zero-padding">
+                    <img src="{{ asset('images/s-web/web3.jpg')}}" class="d-lg-none image-3db" alt="itirepaire">
                     <ul class="listing-style li-bold">
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>After you are completely satisfied with all aspects of your website, our team will set your new website live for the world to see.</span>
+                            <span><i class="fa fa-check-circle"></i>After you are completely satisfied with all aspects of your website, our team will set your new website live for the world to see.</span>
                         </li>
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>We will continue to monitor your site post-launch to ensure all is working as it should be & handover the project to you after the official closure.</span>
+                            <span><i class="fa fa-check-circle"></i>We will continue to monitor your site post-launch to ensure all is working as it should be & handover the project to you after the official closure.</span>
                         </li>
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>Customers can be guaranteed proper assembly and installation based on the project design, ensuring that the product warranty will be honored. </span>
+                            <span><i class="fa fa-check-circle"></i>Customers can be guaranteed proper assembly and installation based on the project design, ensuring that the product warranty will be honored. </span>
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-6 py-5 px-5 pt-5">
+                <div class="col-lg-6 py-5 px-5 pt-4 zero-padding">
+                <img src="{{ asset('images/s-web/host4.jpg')}}" class="d-lg-none image-3da" alt="itirepaire">
                     <ul class="listing-style li-bold">
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>Laravel, PHP, Pyton with LEMP, LAMP or AWS</span>
+                            <span><i class="fa fa-check-circle"></i>Laravel, PHP, Pyton with LEMP, LAMP or AWS</span>
                         </li>
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>Domains and Hosting Packages</span>
+                            <span><i class="fa fa-check-circle"></i>Domains and Hosting Packages</span>
                         </li>
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>Emails</span>
+                            <span><i class="fa fa-check-circle"></i>Emails</span>
                         </li>
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>Payment Gateways</span>
+                            <span><i class="fa fa-check-circle"></i>Payment Gateways</span>
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-6 py-5">
+                <div class="col-lg-6 py-5 d-none d-lg-block">
                     <img src="{{ asset('images/s-web/host4.jpg')}}" class="mx-auto d-block image-3da" alt="itirepaire">
                 </div>
                 <div><hr/></div>
@@ -156,7 +147,7 @@
                     </div>
                     <div class="col-lg-3 text-right col-md-12">
                         <div class="button-wrap">
-                            <a class="readon learn-more" href="contact.html">Get In Touch</a>
+                            <a class="readon learn-more" href="{{ url('/contact') }}">Get In Touch</a>
                         </div>
                     </div>
                 </div>

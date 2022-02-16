@@ -8,7 +8,7 @@
                     <div class="contact-wrap">
                         <div class="sec-title mb-30">
                             <div class="sub-text style2"><a class="active" href="{{ url('/') }}">Home</a><span> / </span><a class="active" href="{{ url('/') }}"> Services</a><span> / Surveillance System</span></div>
-                            <h2 class="title pb-38">
+                            <h2 class="title pb-10">
                                 Surveillance System Installation
                             </h2>
                             <div class="pb-15 li-bold">
@@ -33,94 +33,85 @@
     <!-- About Section End -->
 
     <!-- Services Single Start -->
-    <div class="rs-services-single pt-20">
+    <div class="rs-services-single pt-10">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 d-none d-lg-block">
                     <img src="{{ asset('images/s-cctv/cctvcam1.jpg')}}" class="mx-auto d-block image-3db" alt="itirepaire">
                 </div>
-                <div class="col-lg-6 px-5">
+                <div class="col-lg-6 px-5 zero-padding">
                     <h3>Installation & Maintenance</h3>
+                    <img src="{{ asset('images/s-cctv/cctvcam1.jpg')}}" class="d-lg-none image-3db" alt="itirepaire">
                     <ul class="listing-style li-bold">
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>We specialise in creating bespoke solutions to suit for our customers.</span>
+                            <span><i class="fa fa-check-circle"></i>We specialise in creating bespoke solutions to suit for our customers.</span>
                         </li>
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>Both IP and Analogue HD CCTV Systems are installed which protect your premises with 24/7 recording.</span>
+                            <span><i class="fa fa-check-circle"></i>Both IP and Analogue HD CCTV Systems are installed which protect your premises with 24/7 recording.</span>
                         </li>
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>
+                            <span><i class="fa fa-check-circle"></i>
                                 High quality cameras are used and most of them carry up to a 3 year manufacturer's warranty*. 
                                 Our systems are from leading manufacturers such as <span style="color:red;">HikVision</span>, <span style="color:red;">Axis</span>, etc.
                             </span>
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-6 py-5 px-5">
+                <div class="col-lg-6 py-5 px-5 zero-padding">
                     <h3>Cabelings</h3>
+                    <img src="{{ asset('images/s-cctv/cctvcam3.jpg')}}" class="d-lg-none image-3da" alt="itirepaire">
                     <ul class="listing-style li-bold">
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span> We use CAT6 or Coax-Cables for CCTV Installations.</span>
+                            <span><i class="fa fa-check-circle"></i>We use CAT6 or Coax-Cables for CCTV Installations.</span>
                         </li>
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>NVRs/ DVRs are capable of minimum H265 or H265+ compression so that customers can have double the length of recordings in their hard drives.</span>
+                            <span><i class="fa fa-check-circle"></i>NVRs/ DVRs are capable of minimum H265 or H265+ compression so that customers can have double the length of recordings in their hard drives.</span>
                         </li>
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>Leading standards such as POE or POC installations are performed by experienced installers.</span>
+                            <span><i class="fa fa-check-circle"></i>Leading standards such as POE or POC installations are performed by experienced installers.</span>
                         </li>
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>Wireless security cameras are becoming popular, those may need less wiring in the walls but will still require cables to power the security camera separately</span>
+                            <span><i class="fa fa-check-circle"></i>Wireless security cameras are becoming popular, those may need less wiring in the walls but will still require cables to power the security camera separately</span>
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-6 py-5">
+                <div class="col-lg-6 py-5 d-none d-lg-block">
                     <img src="{{ asset('images/s-cctv/cctvcam3.jpg')}}" class="mx-auto d-block image-3da" alt="itirepaire">
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 d-none d-lg-block">
                     <img src="{{ asset('images/s-cctv/cctv2.jpg')}}" class="mx-auto d-block image-3db" alt="itirepaire">
                 </div>
-                <div class="col-lg-6 px-5">
+                <div class="col-lg-6 px-5 zero-padding">
                     <h3>Remote Viewings</h3>
+                    <img src="{{ asset('images/s-cctv/cctv2.jpg')}}" class="d-lg-none image-3db" alt="itirepaire">
                     <ul class="listing-style li-bold">
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>As a part of the installation, we provide a one year free Dynamic DNS service worth £25/Year.</span>
+                            <span><i class="fa fa-check-circle"></i>As a part of the installation, we provide a one year free Dynamic DNS service worth £25/Year.</span>
                         </li>
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>All our cameras feature night vision.(minimum 20m IR)</span>
+                            <span><i class="fa fa-check-circle"></i>All our cameras feature night vision.(minimum 20m IR)</span>
                         </li>
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>We set up remote viewing on your mobile device or PC to view live and/or playbacks of the recordings. </span>
+                            <span><i class="fa fa-check-circle"></i>We set up remote viewing on your mobile device or PC to view live and/or playbacks of the recordings. </span>
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-6 py-5 px-5">
+                <div class="col-lg-6 py-5 px-5 zero-padding">
                     <h3>Thermal Imaging & Temperature Monitoring</h3>
+                    <img src="{{ asset('images/s-cctv/thermal1.jpg')}}" class="d-lg-none image-3da" alt="itirepaire">
                     <ul class="listing-style li-bold">
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>Thermal imaging systems generally have been shown to accurately measure someone’s surface skin temperature without being physically close to the person being evaluated.</span>
+                            <span><i class="fa fa-check-circle"></i>Thermal imaging systems generally have been shown to accurately measure someone’s surface skin temperature without being physically close to the person being evaluated.</span>
                         </li>
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>The person who handles the system should follow all manufacturer instructions to make sure the system is set up properly and located where it can measure surface skin temperature accurately.</span>
+                            <span><i class="fa fa-check-circle"></i>The person who handles the system should follow all manufacturer instructions to make sure the system is set up properly and located where it can measure surface skin temperature accurately.</span>
                         </li>
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>The person who handles the system should be trained to properly prepare both the location where the system will be used, and the person being evaluated.</span>
+                            <span><i class="fa fa-check-circle"></i>The person who handles the system should be trained to properly prepare both the location where the system will be used, and the person being evaluated.</span>
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-6 py-5">
+                <div class="col-lg-6 py-5 d-none d-lg-block">
                     <img src="{{ asset('images/s-cctv/thermal1.jpg')}}" class="mx-auto d-block image-3da" alt="itirepaire">
                 </div>
             </div>
@@ -165,7 +156,7 @@
                     </div>
                     <div class="col-lg-3 text-right col-md-12">
                         <div class="button-wrap">
-                            <a class="readon learn-more" href="contact.html">Get In Touch</a>
+                            <a class="readon learn-more" href="{{ url('/contact') }}">Get In Touch</a>
                         </div>
                     </div>
                 </div>

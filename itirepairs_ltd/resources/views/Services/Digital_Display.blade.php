@@ -1,14 +1,14 @@
 @extends('template')
 @section('content')
     <!-- About Section Start -->
-    <div class="rs-about pt-20">
+    <div class="rs-about pt-10">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <div class="contact-wrap">
                         <div class="sec-title mb-30">
                             <div class="sub-text style2"><a class="active" href="{{ url('/') }}">Home</a><span> / </span><a class="active" href="{{ url('/') }}"> Services</a><span> / Display Screens</span></div>
-                            <h2 class="title pb-38">
+                            <h2 class="title pb-10">
                                 Digital Display and Advertisement Screens
                             </h2>
                             <div class="pb-15 li-bold">
@@ -19,7 +19,7 @@
                                 we gives you the ultimate brand experience in the digital space with 
                                 indoor and outdoor screens placed in more than 200+ prime locations.
                             </p>
-                            <p class="margin-0 pb-15 li-bold">
+                            <p class="margin-0 li-bold">
                                 We offer the following services to all of our clients.
                             </p>
                         </div>
@@ -32,58 +32,54 @@
     <!-- About Section End -->
 
     <!-- Services Single Start -->
-    <div class="rs-services-single pt-20">
+    <div class="rs-services-single pt-10">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 d-none d-lg-block">
                     <img src="{{ asset('images/s-screen/screen1.jpg')}}" class="mx-auto d-block image-3db" alt="itirepaire">
                 </div>
-                <div class="col-lg-6 px-5">
+                <div class="col-lg-6 px-5 zero-padding">
                     <h3>Outdoor LED advertising screens</h3>
+                    <img src="{{ asset('images/s-screen/screen1.jpg')}}" class="d-lg-none image-3db" alt="itirepaire">
                     <ul class="listing-style li-bold">
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>We are able to design, install a advertising screen which will suit your business needs.</span>
+                            <span><i class="fa fa-check-circle"></i>Captivate the moving audience with dynamic and targeted advertisingcampaigns on the largest location based outdoor digital display network in London.</span>
                         </li>
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>Captivate the moving audience with dynamic and targeted advertisingcampaigns on the largest location based outdoor digital display network in London.</span>
-                        </li>
-                        <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>We provide a customized screen installation based on the specific site conditions  and customer requirements.</span>
+                            <span><i class="fa fa-check-circle"></i>We provide a customized screen installation based on the specific site conditions  and customer requirements.</span>
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-6 py-5 px-5">
-                    <h3>Indoor LED advertising screens</h3>
+                <div class="col-lg-6 px-5 py-5 zero-padding">
+                    <h3>Indoor LED Advertising Screens</h3>
+                    <img src="{{ asset('images/s-screen/screen3.jpg')}}" class="d-lg-none image-3db" alt="itirepaire">
                     <ul class="listing-style li-bold">
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>Our Indoor Mediums guarantee to transmit your brand message to the righttarget audience.</span>
+                            <span><i class="fa fa-check-circle"></i>Our Indoor Mediums guarantee to transmit your brand message to the righttarget audience.</span>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-check-circle"></i>We are able to design, install a advertising screen which will suit your business needs.</span>
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-6 py-5">
+                <div class="col-lg-6 py-5 d-none d-lg-block">
                     <img src="{{ asset('images/s-screen/screen3.jpg')}}" class="mx-auto d-block image-3da" alt="itirepaire">
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 d-none d-lg-block">
                     <img src="{{ asset('images/s-screen/screen2.jpg')}}" class="mx-auto d-block image-3db" alt="itirepaire">
                 </div>
-                <div class="col-lg-6 px-5">
+                <div class="col-lg-6 px-5 zero-padding">
                     <h3>LED Video Wall</h3>
+                    <img src="{{ asset('images/s-screen/screen2.jpg')}}" class="d-lg-none image-3db" alt="itirepaire">
                     <ul class="listing-style li-bold">
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>We provide customers with comprehensive assembly and installation.</span>
+                            <span><i class="fa fa-check-circle"></i>We provide customers with comprehensive assembly and installation.</span>
                         </li>
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>We provide a customized installation based on the specific site conditions  and customer requirements.</span>
+                            <span><i class="fa fa-check-circle"></i>We provide a customized installation based on the specific site conditions  and customer requirements.</span>
                         </li>
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>Our excellent digital wall screen installation services team provides installing and fitting services for retails, schools, corporate offices, construction project offices, and care homes. </span>
+                            <span><i class="fa fa-check-circle"></i>Our excellent digital wall screen installation services team provides installing and fitting services for retails, schools, corporate offices, construction project offices, and care homes. </span>
                         </li>
                     </ul>
                 </div>
@@ -130,7 +126,7 @@
                     </div>
                     <div class="col-lg-3 text-right col-md-12">
                         <div class="button-wrap">
-                            <a class="readon learn-more" href="contact.html">Get In Touch</a>
+                            <a class="readon learn-more" href="{{ url('/contact') }}">Get In Touch</a>
                         </div>
                     </div>
                 </div>

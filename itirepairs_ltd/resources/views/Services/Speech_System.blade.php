@@ -1,17 +1,17 @@
 @extends('template')
 @section('content')
     <!-- About Section Start -->
-    <div class="rs-about pt-20">
+    <div class="rs-about pt-10">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <div class="contact-wrap">
                         <div class="sec-title mb-30">
                             <div class="sub-text style2"><a class="active" href="{{ url('/') }}">Home</a><span> / </span><a class="active" href="{{ url('/') }}"> Services</a><span> / Speech Transfer</span></div>
-                            <h2 class="title pb-38">
+                            <h2 class="title pb-10">
                             Speech Transfer System
                             </h2>
-                            <div class="pb-15 li-bold">
+                            <div class="pb-10 li-bold">
                                 Over 5 years working in Speech Transfer System Installation services.
                             </div>
                             <p class="margin-0 pb-15 li-bold">
@@ -19,7 +19,7 @@
                                 security screen or across a speech counter. These two-way intercom systems operate using a bridge bar system, 
                                 where one person can communicate through a gooseneck microphone to speak with customers on the other side of a speech counter.
                             </p>
-                            <p class="margin-0 pb-15 li-bold">
+                            <p class="margin-0 li-bold">
                                 We offer the following Speech Transfer System to all of our clients.
                             </p>
                         </div>
@@ -32,43 +32,40 @@
     <!-- About Section End -->
 
     <!-- Services Single Start -->
-    <div class="rs-services-single pt-20">
+    <div class="rs-services-single pt-10">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 d-none d-lg-block">
                     <img src="{{ asset('images/s-speech/speech1.jpg')}}" class="mx-auto d-block image-3db" alt="itirepaire">
                 </div>
-                <div class="col-lg-6 px-5">
+                <div class="col-lg-6 px-5 zero-padding">
                     <h3>Contacta</h3>
+                    <img src="{{ asset('images/s-speech/speech1.jpg')}}" class="d-lg-none image-3da" alt="itirepaire">
                     <ul class="listing-style li-bold">
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>The Contacta Surface Mount speech transfer system is a two-way intercom specifically designed to enable clear voice communication between customers and staff through glass security screens.</span>
+                            <span><i class="fa fa-check-circle"></i>The Contacta Surface Mount speech transfer system is a two-way intercom specifically designed to enable clear voice communication between customers and staff through glass security screens.</span>
                         </li>
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>Conversations and transactions can therefore be conducted efficiently without difficulty or delay, even in noisy environments.</span>
+                            <span><i class="fa fa-check-circle"></i>Conversations and transactions can therefore be conducted efficiently without difficulty or delay, even in noisy environments.</span>
                         </li>
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>Easy to use, offers excellent voice reproduction, and enables hands-free operation for both the member of staff and the customer..</span>
+                            <span><i class="fa fa-check-circle"></i>Easy to use, offers excellent voice reproduction, and enables hands-free operation for both the member of staff and the customer..</span>
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-6 py-5 px-5">
+                <div class="col-lg-6 py-5 px-5 zero-padding">
                     <h3>Amptronic Windows Intercom</h3>
+                    <img src="{{ asset('images/s-speech/speech2.png')}}" class="d-lg-none image-3db" alt="itirepaire">
                     <ul class="listing-style li-bold">
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>Enable your workforce to work safely and communicate effectively using window intercoms.</span>
+                            <span><i class="fa fa-check-circle"></i>Enable your workforce to work safely and communicate effectively using window intercoms.</span>
                         </li>
                         <li>
-                            <i class="fa fa-check-circle"></i>
-                            <span>Intercom window systems ensure seamless communication and at the same time maintain social distancing and general safe working practices.</span>
+                            <span><i class="fa fa-check-circle"></i>Intercom window systems ensure seamless communication and at the same time maintain social distancing and general safe working practices.</span>
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-6 py-5">
+                <div class="col-lg-6 py-5 d-none d-lg-block">
                     <img src="{{ asset('images/s-speech/speech2.png')}}" class="mx-auto d-block image-3da" alt="itirepaire">
                 </div>
                 <div><hr/></div>
@@ -114,7 +111,7 @@
                     </div>
                     <div class="col-lg-3 text-right col-md-12">
                         <div class="button-wrap">
-                            <a class="readon learn-more" href="contact.html">Get In Touch</a>
+                            <a class="readon learn-more" href="{{ url('/contact') }}">Get In Touch</a>
                         </div>
                     </div>
                 </div>
