@@ -1,14 +1,26 @@
 @extends('template')
 @section('content')
     <!-- Breadcrumbs Start -->
-    <div class="rs-breadcrumbs img3" style="background-image: url('{{ asset('images/breadcrumbs/3.jpg')}}');">
+    <div class="rs-breadcrumbs img3 d-none d-sm-block" style="background-image: url('{{ asset('images/breadcrumbs/3.jpg')}}');">
         <div class="breadcrumbs-inner text-center">
             <h1 class="page-title">Contact</h1>
             <ul>
-                <li title="Braintech - IT Solutions and Technology Startup HTML Template">
+                <li>
                     <a class="active" href="index.html">Home</a>
                 </li>
                 <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Breadcrumbs End -->
+
+    <!-- Breadcrumbs Start -->
+    <div class="d-sm-none text-center">
+            <h2 class="pt-5 hm">Contact</h2>
+            <ul>
+                <li class="hm">
+                    <a class="active" href="index.html"><u>Home</u> / </a>Contact
+                </li>
             </ul>
         </div>
     </div>

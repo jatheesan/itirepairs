@@ -2,7 +2,7 @@
 @section('content')
 
     <!-- Breadcrumbs Start -->
-    <div class="rs-breadcrumbs img1" style="background-image: url('{{ asset('images/breadcrumbs/1.jpg')}}');">
+    <div class="rs-breadcrumbs d-none d-md-block" style="background-image: url('{{ asset('images/breadcrumbs/1.jpg')}}');">
         <div class="breadcrumbs-inner text-center">
             <h1 class="page-title">About</h1>
             <ul>
@@ -15,11 +15,23 @@
     </div>
     <!-- Breadcrumbs End -->
 
+    <!-- Breadcrumbs Start -->
+    <div class="d-md-none text-center gray-color">
+            <h2 class="pt-5 hm">About</h2>
+            <ul>
+                <li class="hm">
+                    <a class="active" href="index.html"><u>Home</u> / </a>About
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Breadcrumbs End -->
+
     <!-- About Section Start -->
     <div class="rs-about gray-color pt-120 pb-120 md-pt-80 md-pb-80">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 md-mb-30">
+                <div class="col-md-6 md-mb-30">
                     <div class="rs-animation-shape">
                         <div class="images">
                             <img src="{{ asset('images/about/about-3.png') }}" alt="">
@@ -29,7 +41,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 pl-60 md-pl-15">
+                <div class="col-md-6 pl-60 md-pl-15">
                     <div class="contact-wrap">
                         <div class="sec-title mb-30">
                             <div class="sub-text style-bg">About Us</div>
@@ -48,7 +60,7 @@
                             </p>
                         </div>
                         <div class="btn-part">
-                            <a class="readon learn-more" href="contact.html">Learn-More</a>
+                            <a class="readon learn-more" href="{{ url('/contact') }}">Learn-More</a>
                         </div>
                     </div>
                 </div>

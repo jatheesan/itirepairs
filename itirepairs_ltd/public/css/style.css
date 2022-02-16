@@ -10964,5 +10964,10 @@ body .search-modal .close:hover {
     height: 30%;
     margin-right: 10px;
   }
+
+  .hm{
+    margin-bottom:0px;
+    color: #03228F;
+  }
 }
 
