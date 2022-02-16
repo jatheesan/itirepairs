@@ -8,6 +8,7 @@ use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\SendEmailController;
 use App\Http\Controllers\Auth\GoogleController;
 use App\Http\Controllers\ServiceImageController;
+use App\Http\Controllers\ServicePagesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,9 +37,10 @@ Route::get('/digital-display', function () {
     return view('Services.Digital_Display');
 });
 
-Route::get('/network-infrastucture', function () {
-    return view('Services.Network_Infrastucture');
-});
+// Route::get('/network-infrastucture', function () {
+//     return view('Services.Network_Infrastucture');
+// });
+Route::get('/network-infrastucture', [ServicePagesController::class, 'network_index']);
 
 Route::get('/speech-system', function () {
     return view('Services.Speech_System');
