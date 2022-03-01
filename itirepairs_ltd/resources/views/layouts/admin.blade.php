@@ -109,7 +109,45 @@
           <span>Images</span>
         </a>
       </li>
-
+      <li class="nav-item">
+        <form action="{{ url('') }}" method="post">
+          
+        </form>
+        <a class="nav-link collapsed" href="{{ url('/images/view') }}">
+          <i class="bi bi-ethernet"></i>
+          <span>Network</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{{ url('/images/view') }}">
+          <i class="bi bi-camera-video"></i>
+          <span>CCTV</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{{ url('/images/view') }}">
+          <i class="bi bi-display"></i>
+          <span>Display</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{{ url('/images/view') }}">
+          <i class="bi bi-mic"></i>
+          <span>Speech Tranfer</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{{ url('/images/view') }}">
+          <i class="bi bi-wifi"></i>
+          <span>WIFI</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{{ url('/images/view') }}">
+          <i class="bi bi-laptop"></i>
+          <span>Web</span>
+        </a>
+      </li>
     </ul>
 
   </aside><!-- End Sidebar-->

@@ -92,7 +92,7 @@
                                 <div class="main-menu">
                                     <div class="mobile-menu">
                                         <a href="{{ url('/') }}" class="mobile-logo">
-                                            <img src="{{ asset('images/itislide-3.png') }}" alt="itirepaire">
+                                            <img src="{{ asset('images/itislide-6.png') }}" alt="itirepaire">
                                         </a>
                                         <a href="#" class="rs-menu-toggle rs-menu-toggle-close">
                                             <i class="fa fa-bars"></i>
