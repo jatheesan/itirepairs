@@ -66,6 +66,7 @@ Route::group(['middleware' => ['auth']], function() {
     Route::delete('/services/delete/{id}', [ServiceController::class, 'destroy'])->name('service.delete');
 
     Route::get('/images/view', [ServiceImageController::class, 'index'])->name('image.view');
+    Route::post('/images/show', [ServiceImageController::class, 'show'])->name('image.show');
     Route::post('/images/store', [ServiceImageController::class, 'store'])->name('image.store');
     Route::patch('/images/update/{id}', [ServiceImageController::class, 'update'])->name('image.update');
     Route::delete('/images/delete/{id}', [ServiceImageController::class, 'destroy'])->name('image.delete');

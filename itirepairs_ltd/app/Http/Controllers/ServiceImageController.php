@@ -7,6 +7,7 @@ use App\Models\ServiceImage;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreServiceImageRequest;
 use App\Http\Requests\UpdateServiceImageRequest;
+use Illuminate\Http\Request;
 
 class ServiceImageController extends Controller
 {
@@ -21,16 +22,6 @@ class ServiceImageController extends Controller
         $images = ServiceImage::all();
 
         return view('db_images.view',  compact('services', 'images'));
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
     }
 
     /**
@@ -86,9 +77,13 @@ class ServiceImageController extends Controller
      * @param  \App\Models\ServiceImage  $serviceImage
      * @return \Illuminate\Http\Response
      */
-    public function show(ServiceImage $serviceImage)
+    public function show(Request $request)
     {
-        //
+        $service_id = $request -> service_id;
+        $services = Service::all();
+        $images = ServiceImage::where('service_id', $service_id)->get();
+
+        return view('db_images.view',  compact('service_id', 'services', 'images'));
     }
 
     /**

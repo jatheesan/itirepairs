@@ -69,7 +69,7 @@
                               </div>
                               @endif
                           </div>
-                          <div class="col-6 offset-3">
+                          <div class="col-md-6 offset-md-3">
                             <form action="{{ route('image.store') }}" method="post" enctype="multipart/form-data">
                                 @csrf
                                 <div class="mb-3">
@@ -77,9 +77,15 @@
                                     <select class="form-control form-select" id="service_id" name="service_id"
                                         aria-label="Default select example">
                                         <option selected>Open this select service</option>
-                                        @foreach($services as $service)
-                                        <option value="{{ $service->id }}">{{ $service->service_name }}</option>
-                                        @endforeach
+                                        @if(isset($service_id))
+                                            @foreach($services as $service)
+                                            <option value="{{ $service->id }}" {{($service->id == $service_id)? 'selected':''}} >{{ $service->service_name }}</option>
+                                            @endforeach
+                                        @else
+                                            @foreach($services as $service)
+                                            <option value="{{ $service->id }}">{{ $service->service_name }}</option>
+                                            @endforeach
+                                        @endif
                                     </select>
                                     <label for="image">Service Image</label>
                                     <input type="file" name="image[]" class="form-control" multiple>
@@ -110,9 +116,13 @@
                           <div class="col-12">
                               <div class="row">
                                     @foreach($images as $image)
-                                    <div class="col-md-3 pt-3 ps-1">
-                                        <div class="card" style="background-color: #87ceeb !important">
-                                            <img src="{{asset($image->image)}}" alt="iHOMES">
+                                    <div class="col-md-3 col-sm-6 pt-1 ps-1">
+                                        @if($image -> is_main == 1)
+                                        <div class="card" style="background-color: #a083ef !important; border:5px solid #a083ef; border-bottom: 0px;">
+                                        @else
+                                        <div class="card" style="background-color: #35bcf3 !important; border:5px solid #35bcf3; border-bottom: 0px;">
+                                        @endif
+                                            <img src="{{asset($image->image)}}" alt="iHOMES" height="250px">
                                             <div class="row my-1 me-2 justify-content-end">
                                                 <div class="col-5 text-end">
                                                   <div class="btn-group">

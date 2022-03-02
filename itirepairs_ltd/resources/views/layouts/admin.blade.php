@@ -106,47 +106,68 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="{{ url('/images/view') }}">
           <i class="bi bi-slack"></i>
-          <span>Images</span>
+          <span>All Images</span>
         </a>
       </li>
       <li class="nav-item">
-        <form action="{{ url('') }}" method="post">
-          
+        <form id="ITI1" action="{{ url('/images/show') }}" method="post">
+          @csrf
+          <input type="hidden" name="service_id" id="service_id" value="1">
+          <a class="nav-link collapsed" href="#" onclick="iti1()">
+            <i class="bi bi-ethernet"></i>
+            <span>Network</span>
+          </a>
         </form>
-        <a class="nav-link collapsed" href="{{ url('/images/view') }}">
-          <i class="bi bi-ethernet"></i>
-          <span>Network</span>
-        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link collapsed" href="{{ url('/images/view') }}">
-          <i class="bi bi-camera-video"></i>
-          <span>CCTV</span>
-        </a>
+        <form id="ITI2" action="{{ url('/images/show') }}" method="post">
+          @csrf
+          <input type="hidden" name="service_id" id="service_id" value="2">
+          <a class="nav-link collapsed" href="#" onclick="iti2()">
+            <i class="bi bi-camera-video"></i>
+            <span>CCTV</span>
+          </a>
+        </form>
       </li>
       <li class="nav-item">
-        <a class="nav-link collapsed" href="{{ url('/images/view') }}">
-          <i class="bi bi-display"></i>
-          <span>Display</span>
-        </a>
+        <form id="ITI3" action="{{ url('/images/show') }}" method="post">
+          @csrf
+          <input type="hidden" name="service_id" id="service_id" value="3">
+          <a class="nav-link collapsed" href="#" onclick="iti3()">
+            <i class="bi bi-display"></i>
+            <span>Display</span>
+          </a>
+        </form>
       </li>
       <li class="nav-item">
-        <a class="nav-link collapsed" href="{{ url('/images/view') }}">
-          <i class="bi bi-mic"></i>
-          <span>Speech Tranfer</span>
-        </a>
+        <form id="ITI4" action="{{ url('/images/show') }}" method="post">
+          @csrf
+          <input type="hidden" name="service_id" id="service_id" value="4">
+          <a class="nav-link collapsed" href="#" onclick="iti4()">
+            <i class="bi bi-mic"></i>
+            <span>Speech Tranfer</span>
+          </a>
+        </form>
       </li>
       <li class="nav-item">
-        <a class="nav-link collapsed" href="{{ url('/images/view') }}">
-          <i class="bi bi-wifi"></i>
-          <span>WIFI</span>
-        </a>
+        <form id="ITI5" action="{{ url('/images/show') }}" method="post">
+          @csrf
+          <input type="hidden" name="service_id" id="service_id" value="5">
+          <a class="nav-link collapsed" href="#" onclick="iti5()">
+            <i class="bi bi-wifi"></i>
+            <span>WIFI</span>
+          </a>
+        </form>
       </li>
       <li class="nav-item">
-        <a class="nav-link collapsed" href="{{ url('/images/view') }}">
-          <i class="bi bi-laptop"></i>
-          <span>Web</span>
-        </a>
+        <form id="ITI6" action="{{ url('/images/show') }}" method="post">
+          @csrf
+          <input type="hidden" name="service_id" id="service_id" value="6">
+          <a class="nav-link collapsed" href="#" onclick="iti6()">
+            <i class="bi bi-laptop"></i>
+            <span>Web</span>
+          </a>
+        </form>
       </li>
     </ul>
 
@@ -181,4 +202,29 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+  <script>
+    function iti1() {
+      document.getElementById("ITI1").submit();
+    }
+
+    function iti2() {
+      document.getElementById("ITI2").submit();
+    }
+
+    function iti3() {
+      document.getElementById("ITI3").submit();
+    }
+
+    function iti4() {
+      document.getElementById("ITI4").submit();
+    }
+
+    function iti5() {
+      document.getElementById("ITI5").submit();
+    }
+
+    function iti6() {
+      document.getElementById("ITI6").submit();
+    }
+  </script>
 @endsection
