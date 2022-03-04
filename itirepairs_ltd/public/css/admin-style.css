@@ -24,6 +24,36 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: "Nunito", sans-serif;
   }
+
+  .btn-ad {
+    color: #fff;
+    background-color: #5969f3;
+    border-color: #5969f3;
+  }
+  .btn-ad:hover {
+    color: #fff;
+    background-color: #5969f3;
+    border-color: #4652bb;
+  }
+  .btn-check:focus + .btn-ad, .btn-ad:focus {
+    color: #fff;
+    background-color: #5969f3;
+    border-color: #4652bb;
+    box-shadow: 0 0 0 0.25rem #848eebda;
+  }
+  .btn-check:checked + .btn-ad, .btn-check:active + .btn-ad, .btn-ad:active, .btn-ad.active, .show > .btn-ad.dropdown-toggle {
+    color: #fff;
+    background-color: #4652bb;
+    border-color: #5b64bd;
+  }
+  .btn-check:checked + .btn-ad:focus, .btn-check:active + .btn-ad:focus, .btn-ad:active:focus, .btn-ad.active:focus, .show > .btn-ad.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem #848eebda;
+  }
+  .btn-ad:disabled, .btn-ad.disabled {
+    color: #fff;
+    background-color: #5b64bd;
+    border-color: #5b64bd;
+  }
   
   /*--------------------------------------------------------------
   # Main

@@ -103,11 +103,9 @@
           <span>Services</span>
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="{{ url('/images/view') }}">
-          <i class="bi bi-slack"></i>
-          <span>All Images</span>
-        </a>
+      <li class="nav-item" style="color:#5968f3;">
+          <span>All Images </span>
+          <i class="bi bi-caret-down-fill"></i>
       </li>
       <li class="nav-item">
         <form id="ITI1" action="{{ url('/images/show') }}" method="post">

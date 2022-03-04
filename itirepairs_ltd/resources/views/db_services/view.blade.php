@@ -30,7 +30,7 @@
                                 <label for="service_name" class="form-label">Service Name</label>
                                 <input type="text" class="form-control" id="service_name" name="service_name" required autofocus>
                               </div>
-                              <button type="submit" class="btn btn-primary">Submit</button>
+                              <button type="submit" class="btn btn-ad">Submit</button>
                             </form>
                           </div>
                           <div class="modal-footer">
@@ -65,7 +65,7 @@
                         <td>{{ $service->service_name }}</td>
                         <td>
                           <div class="btn-group">
-                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editModal{{$service->id}}"><i class="bi bi-pencil-fill"></i></a>
+                            <a href="#" class="btn btn-ad" data-bs-toggle="modal" data-bs-target="#editModal{{$service->id}}"><i class="bi bi-pencil-fill"></i></a>
                             @include('db_services.edit')
                             <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal{{$service->id}}"><i class="bi bi-trash"></i></a>
                             @include('db_services.delete')

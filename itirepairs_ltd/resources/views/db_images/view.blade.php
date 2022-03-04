@@ -93,7 +93,7 @@
                                     <span class="text-danger">{{$message}}</span>
                                     @enderror
                                 </div>
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" class="btn btn-ad">Submit</button>
                             </form>
                           </div>
                       </div>
@@ -118,9 +118,9 @@
                                     @foreach($images as $image)
                                     <div class="col-md-3 col-sm-6 pt-1 ps-1">
                                         @if($image -> is_main == 1)
-                                        <div class="card" style="background-color: #a083ef !important; border:5px solid #a083ef; border-bottom: 0px;">
+                                        <div class="card" style="background-color: #5968f3 !important; border:5px solid #5968f3; border-bottom: 0px;">
                                         @else
-                                        <div class="card" style="background-color: #35bcf3 !important; border:5px solid #35bcf3; border-bottom: 0px;">
+                                        <div class="card" style="background-color: #8994f7 !important; border:5px solid #8994f7; border-bottom: 0px;">
                                         @endif
                                             <img src="{{asset($image->image)}}" alt="iHOMES" height="250px">
                                             <div class="row my-1 me-2 justify-content-end">
