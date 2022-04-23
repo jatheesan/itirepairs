@@ -40,7 +40,7 @@
                     <img src="{{ asset('images/s-network/fiber3.jpg')}}" class="mx-auto d-block image-3db" alt="itirepaire">
                 </div>
                 <div class="col-lg-6 px-5 zero-padding">
-                    <h3>Cat6 and Cat7 Cabling</h3>
+                    <h3 class="txt-blue">Cat6 and Cat7 Cabling</h3>
                     <img src="{{ asset('images/s-network/fiber3.jpg')}}" class="d-lg-none image-3db" alt="itirepaire">
                     <ul class="listing-style li-bold">
                         <li>
@@ -55,7 +55,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-6 px-5 py-5 zero-padding">
-                    <h3>Fiber Optic Networking</h3>
+                    <h3 class="txt-blue">Fiber Optic Networking</h3>
                     <img src="{{ asset('images/s-network/cable2.jpg')}}" class="d-lg-none image-3da" alt="itirepaire">
                     <ul class="listing-style li-bold">
                         <li>
@@ -79,7 +79,7 @@
                     <img src="{{ asset('images/s-network/rack4.jpg')}}" class="mx-auto d-block image-3db" alt="itirepaire">
                 </div>
                 <div class="col-lg-6 px-5 zero-padding">
-                    <h3>Rack Cabinet Installation</h3>
+                    <h3 class="txt-blue">Rack Cabinet Installation</h3>
                     <img src="{{ asset('images/s-network/rack4.jpg')}}" class="d-lg-none image-3db" alt="itirepaire">
                     <ul class="listing-style li-bold">
                         <li>

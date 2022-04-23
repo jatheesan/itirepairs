@@ -90,7 +90,7 @@
                             <div class="row align-items-center">
                                 <div class="col-lg-3">
                                     <div class="logo-part">
-                                        <a href="{{ url('/') }}" class="mobile-logo"><img src="{{ asset('images/itislide-3.png') }}" alt="itirepaire"></a>
+                                        <a href="{{ url('/') }}" class="mobile-logo"><img class="headerlogo" src="{{ asset('images/itislide-3.png') }}" alt="itirepaire"></a>
                                     </div>
                                     <div class="mobile-menu">
                                         <a href="#" class="rs-menu-toggle rs-menu-toggle-close secondary">

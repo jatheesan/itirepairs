@@ -83,7 +83,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-6 py-5 px-5 pt-4 zero-padding">
+                <div class="col-lg-6 py-5 px-5 pt-4" style="margin-top: 50px; line-height: 50px;">
                 <img src="{{ asset('images/s-web/host4.jpg')}}" class="d-lg-none image-3da" alt="itirepaire">
                     <ul class="listing-style li-bold">
                         <li>

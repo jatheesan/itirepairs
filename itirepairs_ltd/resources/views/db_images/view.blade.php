@@ -122,7 +122,7 @@
                                         @else
                                         <div class="card" style="background-color: #8994f7 !important; border:5px solid #8994f7; border-bottom: 0px;">
                                         @endif
-                                            <img src="{{asset($image->image)}}" alt="iHOMES" height="250px">
+                                            <img src="{{asset($image->image)}}" alt="itirepaire" height="250px">
                                             <div class="row my-1 me-2 justify-content-end">
                                                 <div class="col-5 text-end">
                                                   <div class="btn-group">

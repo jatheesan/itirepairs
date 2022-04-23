@@ -39,7 +39,7 @@
                     <img src="{{ asset('images/s-screen/screen1.jpg')}}" class="mx-auto d-block image-3db" alt="itirepaire">
                 </div>
                 <div class="col-lg-6 px-5 zero-padding">
-                    <h3>Outdoor LED advertising screens</h3>
+                    <h3 class="txt-blue">Outdoor LED advertising screens</h3>
                     <img src="{{ asset('images/s-screen/screen1.jpg')}}" class="d-lg-none image-3db" alt="itirepaire">
                     <ul class="listing-style li-bold">
                         <li>
@@ -51,7 +51,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-6 px-5 py-5 zero-padding">
-                    <h3>Indoor LED Advertising Screens</h3>
+                    <h3 class="txt-blue">Indoor LED Advertising Screens</h3>
                     <img src="{{ asset('images/s-screen/screen3.jpg')}}" class="d-lg-none image-3db" alt="itirepaire">
                     <ul class="listing-style li-bold">
                         <li>
@@ -69,7 +69,7 @@
                     <img src="{{ asset('images/s-screen/screen2.jpg')}}" class="mx-auto d-block image-3db" alt="itirepaire">
                 </div>
                 <div class="col-lg-6 px-5 zero-padding">
-                    <h3>LED Video Wall</h3>
+                    <h3 class="txt-blue">LED Video Wall</h3>
                     <img src="{{ asset('images/s-screen/screen2.jpg')}}" class="d-lg-none image-3db" alt="itirepaire">
                     <ul class="listing-style li-bold">
                         <li>

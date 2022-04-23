@@ -39,7 +39,7 @@
                     <img src="{{ asset('images/s-speech/speech1.jpg')}}" class="mx-auto d-block image-3db" alt="itirepaire">
                 </div>
                 <div class="col-lg-6 px-5 zero-padding">
-                    <h3>Contacta</h3>
+                    <h3 class="txt-blue">Contacta</h3>
                     <img src="{{ asset('images/s-speech/speech1.jpg')}}" class="d-lg-none image-3da" alt="itirepaire">
                     <ul class="listing-style li-bold">
                         <li>
@@ -54,7 +54,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-6 py-5 px-5 zero-padding">
-                    <h3>Amptronic Windows Intercom</h3>
+                    <h3 class="txt-blue">Amptronic Windows Intercom</h3>
                     <img src="{{ asset('images/s-speech/speech2.png')}}" class="d-lg-none image-3db" alt="itirepaire">
                     <ul class="listing-style li-bold">
                         <li>

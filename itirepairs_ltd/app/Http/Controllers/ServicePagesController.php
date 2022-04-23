@@ -54,4 +54,11 @@ class ServicePagesController extends Controller
 
         return view('Services.Web_Development', compact('images'));
     }
+
+    public function gallery_index()
+    {
+        $images = ServiceImage::inRandomOrder()->limit(15)->get();
+
+        return view('pages.gallery',  compact('images'));
+    }
 }

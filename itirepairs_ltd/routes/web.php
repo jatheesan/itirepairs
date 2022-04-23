@@ -35,6 +35,7 @@ Route::get('/digital-display', [ServicePagesController::class, 'screen_index']);
 Route::get('/speech-system', [ServicePagesController::class, 'speech_index']);
 Route::get('/web-development', [ServicePagesController::class, 'web_index']);
 Route::get('/wifi-solution', [ServicePagesController::class, 'wifi_index']);
+Route::get('/gallery', [ServicePagesController::class, 'gallery_index']);
 
 Route::get('/about', function () {
     return view('pages.about');
@@ -43,6 +44,7 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('pages.contact');
 });
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

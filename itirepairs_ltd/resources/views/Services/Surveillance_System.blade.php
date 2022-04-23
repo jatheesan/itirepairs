@@ -40,7 +40,7 @@
                     <img src="{{ asset('images/s-cctv/cctvcam1.jpg')}}" class="mx-auto d-block image-3db" alt="itirepaire">
                 </div>
                 <div class="col-lg-6 px-5 zero-padding">
-                    <h3>Installation & Maintenance</h3>
+                    <h3 class="txt-blue">Installation & Maintenance</h3>
                     <img src="{{ asset('images/s-cctv/cctvcam1.jpg')}}" class="d-lg-none image-3db" alt="itirepaire">
                     <ul class="listing-style li-bold">
                         <li>
@@ -58,7 +58,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-6 py-5 px-5 zero-padding">
-                    <h3>Cabelings</h3>
+                    <h3 class="txt-blue">Cabelings</h3>
                     <img src="{{ asset('images/s-cctv/cctvcam3.jpg')}}" class="d-lg-none image-3da" alt="itirepaire">
                     <ul class="listing-style li-bold">
                         <li>
@@ -82,7 +82,7 @@
                     <img src="{{ asset('images/s-cctv/cctv2.jpg')}}" class="mx-auto d-block image-3db" alt="itirepaire">
                 </div>
                 <div class="col-lg-6 px-5 zero-padding">
-                    <h3>Remote Viewings</h3>
+                    <h3 class="txt-blue">Remote Viewings</h3>
                     <img src="{{ asset('images/s-cctv/cctv2.jpg')}}" class="d-lg-none image-3db" alt="itirepaire">
                     <ul class="listing-style li-bold">
                         <li>
@@ -97,7 +97,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-6 py-5 px-5 zero-padding">
-                    <h3>Thermal Imaging & Temperature Monitoring</h3>
+                    <h3 class="txt-blue">Thermal Imaging & Temperature Monitoring</h3>
                     <img src="{{ asset('images/s-cctv/thermal1.jpg')}}" class="d-lg-none image-3da" alt="itirepaire">
                     <ul class="listing-style li-bold">
                         <li>

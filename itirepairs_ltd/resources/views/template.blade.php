@@ -23,6 +23,8 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
     <!-- responsive css -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/responsive.css') }}">
+    <!-- gallery css -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/gallery.css') }}">
 </head>
 <body class="defult-home">
         
@@ -45,7 +47,7 @@
                             <div class="row rs-vertical-middle">
                                 <div class="col-lg-2">
                                     <div class="logo-part">
-                                        <a href="{{ url('/') }}"><img src="{{ asset('images/itislide-3.png') }}" alt="itirepaire"></a>
+                                        <a href="{{ url('/') }}"><img class="headerlogo" src="{{ asset('images/itislide-3.png') }}" alt="itirepaire"></a>
                                     </div>
                                 </div>
                                 <div class="col-lg-10 text-right">
@@ -85,14 +87,14 @@
                         <div class="container">
                             <div class="logo-area">
                                 <a href="{{ url('/') }}">
-                                    <img class="sticky-logo" src="{{ asset('images/itislide-3.png') }}" alt="itirepaire">
+                                    <img class="sticky-logo" class="headerlogo" src="{{ asset('images/itislide-3.png') }}" alt="itirepaire" style="padding-bottom: 5px;">
                                 </a>
                             </div>
                             <div class="rs-menu-area">
                                 <div class="main-menu">
                                     <div class="mobile-menu">
                                         <a href="{{ url('/') }}" class="mobile-logo">
-                                            <img src="{{ asset('images/itislide-6.png') }}" alt="itirepaire">
+                                            <img class="headerlogo" src="{{ asset('images/itislide-6.png') }}" alt="itirepaire">
                                         </a>
                                         <a href="#" class="rs-menu-toggle rs-menu-toggle-close">
                                             <i class="fa fa-bars"></i>
@@ -119,6 +121,9 @@
                                             </li>
                                             <li>
                                                 <a href="{{ url('/contact') }}">Contact</a>
+                                            </li>
+                                            <li>
+                                                <a href="{{ url('/gallery') }}">Gallery</a>
                                             </li>
                                         </ul> <!-- //.nav-menu -->
                                     </nav>                                        
