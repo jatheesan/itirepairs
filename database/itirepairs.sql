@@ -112,7 +112,7 @@ CREATE TABLE `services` (
 
 INSERT INTO `services` (`id`, `service_name`, `created_at`, `updated_at`) VALUES
 (1, 'Network Infrastucture and Installation', NULL, NULL),
-(2, 'Surveillance System Installation', NULL, NULL),
+(2, 'security System Installation', NULL, NULL),
 (3, 'Digital Display and Advertisement Screens', NULL, NULL),
 (4, 'Speech Transfer System', NULL, NULL),
 (5, 'Commercial WiFi Solutions and Access control', NULL, NULL),

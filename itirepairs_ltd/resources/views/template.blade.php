@@ -25,6 +25,10 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/responsive.css') }}">
     <!-- gallery css -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/gallery.css') }}">
+    <!-- cookie css -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/cookie-style1.css') }}">
+    
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/service-card.css') }}">
 </head>
 <body class="defult-home">
         
@@ -108,8 +112,8 @@
                                             <li class="menu-item-has-children current-menu-item">
                                                 <a href="#">Services</a>
                                                 <ul class="sub-menu">
-                                                <li><a href="{{ url('/network-infrastucture') }}">Network Infrastucture and Installation</a></li>
-                                                <li><a href="{{ url('/surveillance-system') }}">Surveillance System Installation</a></li>
+                                                <li><a href="{{ url('/network-infrastucture') }}">IT Facility Management</a></li>
+                                                <li><a href="{{ url('/security-system') }}">Security System Installation</a></li>
                                                 <li><a href="{{ url('/digital-display') }}">Digital Display and Advertisement Screens</a></li>
                                                 <li><a href="{{ url('/speech-system') }}">Speech Transfer System</a></li>
                                                 <li><a href="{{ url('/wifi-solution') }}">Commercial WiFi Solutions and Access control</a></li>
@@ -170,7 +174,7 @@
             <div class="footer-top">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-4 col-md-12 col-sm-12 footer-widget">
+                        <div class="col-lg-4 col-md-6 col-sm-12 footer-widget">
                             <div class="footer-logo mb-30">
                                 <a href="index-2.html"><img src="{{ asset('images/itislide-3.png') }}" alt="itirepaire"></a>
                             </div>
@@ -193,14 +197,14 @@
                                                                            
                               </ul>
                         </div>
-                        <div class="col-lg-5 col-md-12 col-sm-12 pl-45 md-pl-15 md-mb-30">
+                        <div class="col-lg-5 col-md-6 col-sm-12 pl-45 md-pl-15 md-mb-30">
                             <h3 class="widget-title">Our Services</h3>
                             <ul class="site-map">
-                                <li><a href="{{ url('/wifi-solution') }}">Network Infrastucture and Installation</a></li>
-                                <li><a href="{{ url('/surveillance-system') }}">Surveillance System Installation</a></li>
+                                <li><a href="{{ url('/network-infrastucture') }}">IT Facility Management</a></li>
+                                <li><a href="{{ url('/security-system') }}">Security System Installation</a></li>
                                 <li><a href="{{ url('/digital-display') }}">Digital Display and Advertisement Screens</a></li>
                                 <li><a href="{{ url('/speech-system') }}">Speech Transfer System</a></li>
-                                <li><a href="{{ url('/network-infrastucture') }}">Commercial WiFi Solutions and Access control</a></li>
+                                <li><a href="{{ url('/wifi-solution') }}">Commercial WiFi Solutions and Access control</a></li>
                                 <li><a href="{{ url('/web-development') }}">Web Development</a></li>
                             </ul>
                         </div>
@@ -234,11 +238,11 @@
                                     </div>
                                 </li>
                             </ul>
-                            <p>
+                            <!-- <p>
                                 <input type="email" name="EMAIL" placeholder="Your email address" required="">
                                 <em class="paper-plane"><input type="submit" value="Sign up"></em>
                                 <i class="flaticon-send"></i>
-                            </p>
+                            </p> -->
                         </div>
                     </div>
                 </div>
@@ -272,6 +276,20 @@
             <i class="fa fa-angle-up"></i>
         </div>
         <!-- End scrollUp  -->
+
+        <!-- start cookie consent model -->
+        <div class="cookie-consent-model">
+            <div class="content">
+                <img src="{{ asset('images/cookie2.png')}}" alt="itirepaire">
+                <h3>Allow Cookies</h3>
+                <p>This website use cookies to ensure you get the best experience on our site</p>
+                <div class="btns">
+                    <button class="btn btn-secondary cancel">Cancel</button>
+                    <button class="btn accept">Accept</button>
+                </div>
+            </div>
+        </div>
+        <!-- End cookie consent model -->
 
         <!-- Search Modal Start -->
         <div aria-hidden="true" class="modal fade search-modal" role="dialog" tabindex="-1">
@@ -308,6 +326,8 @@
         <script src="{{ asset('js/contact.form.js') }}"></script>
         <!-- main js -->
         <script src="{{ asset('js/main.js') }}"></script>
+        <!-- cookie js -->
+        <script src="{{ asset('js/cookie-style1.js') }}"></script>
         </body>
 
 </html>

@@ -57,7 +57,7 @@
                             </div>
                             <p class="margin-0 pb-15">
                             Additionally, ITi Repairs© Ltd offers an excellent level of services for our customers other than computer repairs. 
-                            We also install CCTV systems, set up remote surveillance systems, and provide bespoke web design as well as small business networking.
+                            We also install CCTV systems, set up remote security systems, and provide bespoke web design as well as small business networking.
                             Our new wing of educational services provides a hands-on experience for students in electronic design and simulation software. 
                             We request students to register for a hands-on session for Raspberry Pi designs/developments and programming*. 
                             </p>

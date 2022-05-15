@@ -15,10 +15,10 @@ class ServiceSeeder extends Seeder
     public function run()
     {
         DB::table('services')->insert([
-            'service_name' => 'Network Infrastucture and Installation']);
+            'service_name' => 'IT Facility Management']);
 
         DB::table('services')->insert([
-            'service_name' => 'Surveillance System Installation']);
+            'service_name' => 'Security System Installation']);
 
         DB::table('services')->insert([
             'service_name' => 'Digital Display and Advertisement Screens']);

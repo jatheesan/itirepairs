@@ -110,11 +110,11 @@
     <!-- Services Single End -->
 
 
-    <!-- Services Single Start -->
-    <div class="rs-services-single pt-20 pb-20 md-pt-10 md-pb-10">
+    <!-- Service Carousel Section Start -->
+    <div class="rs-why-choose style2 pt-40 pb-40 md-pt-20 md-pb-20">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 md-mb-50">
+                <div class="col-xl-7 col-lg-8 md-mb-50">
                     @if(count($images) == 0)
                     <div class="services-img">
                         <img src="{{ asset('images/services/single/1.jpg') }}" alt="">
@@ -145,23 +145,50 @@
                     </div>
                     @endif
                 </div>
-                <div class="col-lg-4 pl-32 md-pl-15">
-                    <ul class="services-list">
-                        <li><a href="{{ url('/network-infrastucture') }}">Network Infrastucture and Installation</a></li>
-                        <li><a href="{{ url('/surveillance-system') }}">Surveillance System Installation</a></li>
-                        <li><a href="{{ url('/digital-display') }}">Digital Display and Advertisement Screens</a></li>
-                        <li><a href="{{ url('/speech-system') }}">Speech Transfer System</a></li>
-                        <li><a href="{{ url('/wifi-solution') }}">Commercial WiFi Solutions and Access control</a></li>
-                        <li><a class="active" href="{{ url('/web-development') }}">Web Development</a></li>
-                    </ul>
+                <div class="col-xl-5 col-lg-4 md-mb-30">
+                    <div class="rs-contact mod1">
+                        <div class="contact-wrap">
+                            <div class="content-part mb-25">
+                                <h2 class="title mb-15">Speak With Our Experts</h2>
+                                <p class="desc">We here to help you 24/7 with experts</p>
+                            </div>
+                            <div class="services-wrap mb-25">
+                                <div class="services-icon">
+                                    <img src="{{ asset('images/choose/icons/style2/1.png') }}" alt="">
+                                </div>
+                                <div class="services-text">
+                                    <h5 class="title">Email</h5>
+                                    <p class="services-txt"><a href="mailto:info@ITiRepairs.co.uk">info@ITiRepairs.co.uk</a></p>
+                                </div>
+                            </div>
+                            <div class="services-wrap mb-25">
+                                <div class="services-icon">
+                                    <img src="{{ asset('images/choose/icons/style2/2.png') }}" alt="">
+                                </div>
+                                <div class="services-text">
+                                    <h5 class="title">Call Us</h5>
+                                    <p class="services-txt"><a href="#">07889 121 609</a></p>
+                                </div>
+                            </div>
+                            <div class="services-wrap">
+                                <div class="services-icon">
+                                    <img src="{{ asset('images/choose/icons/style2/3.png') }}" alt="">
+                                </div>
+                                <div class="services-text">
+                                    <h5 class="title">Office Address</h5>
+                                    <p class="services-txt"><a href="#">302 High Street North,<span>EastHam. E12 6SA</span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Services Single End -->
+    <!-- Service Carousel Section End -->
 
     <!-- Cta section start -->
-    <div class="rs-cta style1 bg7 pt-80 pb-80" style="background-image: url('{{ asset('images/bg/cta-bg.jpg')}}');">
+    <div class="rs-cta style1 bg7 pt-40 pb-40" style="background-image: url('{{ asset('images/bg/cta-bg.jpg')}}');">
         <div class="container">
             <div class="cta-wrap">
                 <div class="row align-items-center">
@@ -173,7 +200,7 @@
                     </div>
                     <div class="col-lg-3 text-right col-md-12">
                         <div class="button-wrap">
-                            <a class="readon learn-more" href="{{ url('/contact') }}">Get In Touch</a>
+                            <a class="readon learn-more" href="{{ url('/contact') }}">Let's Talk</a>
                         </div>
                     </div>
                 </div>

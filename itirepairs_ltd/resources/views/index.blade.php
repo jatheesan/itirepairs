@@ -31,6 +31,8 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
     <!-- responsive css -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/responsive.css') }}">
+    <!-- cookie css -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/cookie-style1.css') }}">
 </head>
 <body class="defult-home">
         
@@ -109,8 +111,8 @@
                                                     <li class="menu-item-has-children current-menu-item">
                                                        <a href="#">Services</a>
                                                        <ul class="sub-menu">
-                                                        <li><a href="{{ url('/network-infrastucture') }}">Network Infrastucture and Installation</a></li>
-                                                        <li><a href="{{ url('/surveillance-system') }}">Surveillance System Installation</a></li>
+                                                        <li><a href="{{ url('/network-infrastucture') }}">IT Facility Management</a></li>
+                                                        <li><a href="{{ url('/security-system') }}">Security System Installation</a></li>
                                                         <li><a href="{{ url('/digital-display') }}">Digital Display and Advertisement Screens</a></li>
                                                         <li><a href="{{ url('/speech-system') }}">Speech Transfer System</a></li>
                                                         <li><a href="{{ url('/wifi-solution') }}">Commercial WiFi Solutions and Access control</a></li>
@@ -122,6 +124,9 @@
                                                     </li>
                                                     <li>
                                                       <a href="{{ url('/contact') }}">Contact</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{{ url('/gallery') }}">Gallery</a>
                                                     </li>
                                                </ul> <!-- //.nav-menu -->
                                             </nav>                                        
@@ -185,7 +190,7 @@
             <div class="rs-services main-home style1 pt-100 md-pt-0">
                 <div class="container">
                     <div class="row pb-35 pl-25 pr-25 md-pl-0 md-pr-0">
-                        <div class="col-lg-4 col-md-6 mb-20">
+                        <div class="col-lg-4 col-md-6 md-mb-10">
                             <div class="services-item">
                                 <div class="services-icon">
                                    <div class="image-part">
@@ -194,17 +199,19 @@
                                 </div>
                                 <div class="services-content">
                                     <div class="services-text">
-                                       <h3 class="services-title"><a href="{{ url('/network-infrastucture') }}">Network Infrastucture and Installation</a></h3>
+                                       <h3 class="services-title"><a href="{{ url('/network-infrastucture') }}">IT Facility Management</a></h3>
                                     </div>
                                     <div class="services-desc">
-                                       <p>Rack Cabinet Installation, NAS and other services</p>
-                                       <p>Fiber optic Networking, Cat6 and Cat7 Cabling and Terminatios</p>
+                                        <p><strong>CAT6 cabling & Fibre cabling</strong></p>
+                                        <p><strong>Instead of Rack Cabinet & Service Management</strong>-</p>
+                                       <p>Router Setup/VLANS and Firewalls</p>
+                                       <p>LAN management, server & NAS setup</p>
                                        <br>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 md-mb-30">
+                        <div class="col-lg-4 col-md-6 md-mb-10">
                            <div class="services-item">
                                <div class="services-icon">
                                    <div class="image-part">
@@ -213,9 +220,12 @@
                                </div>
                                <div class="services-content">
                                    <div class="services-text">
-                                       <h3 class="services-title"><a href="{{ url('/surveillance-system') }}">Surveillance System Installation</a></h3>
+                                       <h3 class="services-title"><a href="{{ url('/security-system') }}">Security System Installation</a></h3>
                                    </div>
                                    <div class="services-desc">
+                                        <p>
+                                           <strong>Commercial Security System & Domestic Security System</strong>
+                                       </p>
                                        <p>
                                            <strong>Hikvision</strong> - [ANPR, Thermal imaging & temperature monitoring, ColorVU]
                                        </p>
@@ -226,7 +236,7 @@
                                </div>
                            </div> 
                         </div>
-                        <div class="col-lg-4 col-md-6 sm-mb-30">
+                        <div class="col-lg-4 col-md-6 md-mb-10">
                            <div class="services-item">
                                <div class="services-icon">
                                    <div class="image-part">
@@ -248,7 +258,7 @@
                                </div>
                            </div> 
                         </div>
-                        <div class="col-lg-4 col-md-6 md-mb-30">
+                        <div class="col-lg-4 col-md-6 md-mb-10">
                            <div class="services-item">
                                <div class="services-icon">
                                    <div class="image-part">
@@ -268,7 +278,7 @@
                                </div>
                            </div> 
                         </div>
-                        <div class="col-lg-4 col-md-6 md-mb-30">
+                        <div class="col-lg-4 col-md-6 md-mb-10">
                            <div class="services-item">
                                <div class="services-icon">
                                    <div class="image-part">
@@ -289,7 +299,7 @@
                                </div>
                            </div> 
                         </div>
-                        <div class="col-lg-4 col-md-6 md-mb-30">
+                        <div class="col-lg-4 col-md-6 md-mb-10">
                            <div class="services-item">
                                <div class="services-icon">
                                    <div class="image-part">
@@ -310,16 +320,237 @@
                         </div>
                     </div>
                 </div>
-                <div class="shape-part d-none d-sm-block">
+                <!-- <div class="shape-part d-none d-sm-block">
                     <div class="left-side">
                         <img src="{{ asset('images/services/shape-2.png') }}" alt="itirepaire"> 
                     </div>
                     <div class="right-side">
                         <img src="{{ asset('images/services/shape-3.png') }}" alt="itirepaire"> 
                     </div>
-                </div>
+                </div> -->
             </div>
             <!-- Services Section End -->
+
+            <!-- why choose us Start -->
+              <div class="rs-process modify1 pt-160 pb-120 md-pt-75 md-pb-80">
+                  <div class="shape-animation">
+                      <div class="shape-process">
+                          <img class="dance2" src="{{ asset('images/process/circle.png') }}" alt="itirepaire" width="60%">
+                      </div>
+                  </div>
+                  <div class="container">
+                      <div class="row align-items-center">
+                          <!-- <div class="col-lg-4 pr-40 md-pr-15 md-pb-80">
+                              <div class="process-wrap md-center">
+                                  <div class="sec-title mb-30">
+                                      <h2 class="title white-color uppercase">
+                                      5 reasons why you should choose ITIrepairs
+                                      </h2>
+                                  </div>
+                                  <div class="btn-part mt-40">
+                                      <a class="readon started" href="#">Contact Us</a>
+                                  </div>
+                              </div>
+                          </div> -->
+                          <div class="col-lg-12 sm-pl-40 sm-pr-20">
+                              <div class="row">
+                                <div class="col-md-4 mb-70" style="display: flex; align-items: center; justify-content: center;">
+                                    <div class="process-wrap md-center">
+                                        <div class="sec-title mt-30">
+                                            <h3 class="title white-color uppercase">
+                                            5 reasons why you should choose ITIrepairs
+                                            </h3>
+                                        </div>
+                                        <div class="sec-title mb-30" style="margin-top: -20px;">
+                                            <div class="sub-text style2"></div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4 mb-70">
+                                      <div class="rs-addon-number">
+                                          <div class="number-text">
+                                              <div class="number-area">
+                                                  1
+                                              </div>
+                                              <div class="number-title">
+                                                  <h3 class="title">Expert CCTV Advisors</h3>
+                                              </div>
+                                              <p class="number-txt">  Quisque placerat vitae lacus ut scelerisque. Fusce luctus odio ac nibh luctus, in porttitor theo lacus egestas.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-70">
+                                      <div class="rs-addon-number">
+                                          <div class="number-text">
+                                              <div class="number-area green-bg">
+                                                  2
+                                              </div>
+                                              <div class="number-title">
+                                                  <h3 class="title">Attention to Detail</h3>
+                                              </div>
+                                              <p class="number-txt">Quisque placerat vitae lacus ut scelerisque. Fusce luctus odio ac nibh luctus, in porttitor theo lacus egestas.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-70">
+                                      <div class="rs-addon-number">
+                                          <div class="number-text">
+                                              <div class="number-area plum-bg">
+                                                  3
+                                              </div>
+                                              <div class="number-title">
+                                                  <h3 class="title">Highly Qualified Engineers</h3>
+                                              </div>
+                                              <p class="number-txt">Quisque placerat vitae lacus ut scelerisque. Fusce luctus odio ac nibh luctus, in porttitor theo lacus egestas.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-70">
+                                      <div class="rs-addon-number">
+                                          <div class="number-text">
+                                              <div class="number-area pink-bg">
+                                                  4
+                                              </div>
+                                              <div class="number-title">
+                                                  <h3 class="title">No Compromise on Quality</h3>
+                                              </div>
+                                              <p class="number-txt">Quisque placerat vitae lacus ut scelerisque. Fusce luctus odio ac nibh luctus, in porttitor theo lacus egestas.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                      <div class="rs-addon-number">
+                                          <div class="number-text">
+                                              <div class="number-area orange-bg">
+                                                  5
+                                              </div>
+                                              <div class="number-title">
+                                                  <h3 class="title">Unrivalled Customer Care</h3>
+                                              </div>
+                                              <p class="number-txt">Quisque placerat vitae lacus ut scelerisque. Fusce luctus odio ac nibh luctus, in porttitor theo lacus egestas.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            <!-- why choose us End -->
+
+            <!-- our relations Start -->
+            <div class="rs-services style4 modify1 services3 mt-30">
+                <div class="container">
+                   <div class="sec-title2 text-center mb-45 md-mb-30 pl-40 pr-40 md-pl-25 md-pr-25 sm-pl-0 sm-pr-0">
+                       <!-- <span class="sub-text white-color">Project</span> -->
+                    <h2 class="title txt-blue">
+                        MOST COMPANIES HAVE CLIENTS WE HAVE RELATIONSHIPS!
+                    </h2>
+                    <div class="sec-title mb-30" style="margin-left: 47%; margin-top: -20px;">
+                        <div class="sub-text style2"></div>
+                    </div>
+                    <div class="row box md-pl-0 md-pr-0 mt-80">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-6 sm-p-10">
+                            <div class="relation-box">
+                                <div class="partner-item">
+                                    <div class="logo-img">
+                                        <a href="https://www.costcutter.co.uk/">
+                                            <!-- <img class="hover-logo" src="{{ asset('images/partners/1.png') }}" alt="itirepaire"> -->
+                                            <img class="main-logo" src="{{ asset('images/partners/1.png') }}" title="Costcutter" alt="itirepaire">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-6 sm-p-10">
+                            <div class="relation-box">
+                                <div class="partner-item">
+                                    <div class="logo-img">
+                                        <a href="https://www.bp.com/">
+                                            <!-- <img class="hover-logo" src="{{ asset('images/partners/2.png') }}" alt="itirepaire"> -->
+                                            <img class="main-logo" src="{{ asset('images/partners/2.png') }}" title="British Petroleum" alt="itirepaire">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-6 sm-p-10">
+                            <div class="relation-box">
+                                <div class="partner-item">
+                                    <div class="logo-img">
+                                        <a href="https://texaco.co.uk/">
+                                            <!-- <img class="hover-logo" src="{{ asset('images/partners/3.png') }}" alt="itirepaire"> -->
+                                            <img class="main-logo" src="{{ asset('images/partners/3.png') }}" title="Texaco" alt="itirepaire">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-6 sm-p-10">
+                            <div class="relation-box">
+                                <div class="partner-item">
+                                    <div class="logo-img">
+                                        <a href="https://www.esso.co.uk/en-gb/">
+                                            <!-- <img class="hover-logo" src="{{ asset('images/partners/4.png') }}" alt="itirepaire"> -->
+                                            <img class="main-logo" src="{{ asset('images/partners/4.png') }}" title="Esso" alt="itirepaire">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-6 sm-p-10">
+                            <div class="relation-box">
+                                <div class="partner-item">
+                                    <div class="logo-img">
+                                        <a href="https://www.shell.co.uk/">
+                                            <!-- <img class="hover-logo" src="{{ asset('images/partners/5.png') }}" alt="itirepaire"> -->
+                                            <img class="main-logo" src="{{ asset('images/partners/5.png') }}" title="Shell" alt="itirepaire">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-6 sm-p-10">
+                            <div class="relation-box">
+                                <div class="partner-item">
+                                    <div class="logo-img">
+                                        <a href="https://www.thesouthernco-operative.co.uk/">
+                                            <!-- <img class="hover-logo" src="{{ asset('images/partners/6.png') }}" alt="itirepaire"> -->
+                                            <img class="main-logo" src="{{ asset('images/partners/6.png') }}" title="Southernco-operative" alt="itirepaire">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-6 sm-p-10">
+                            <div class="relation-box">
+                                <div class="partner-item">
+                                    <div class="logo-img">
+                                        <a href="https://www.londis.co.uk/">
+                                            <!-- <img class="hover-logo" src="{{ asset('images/partners/7.png') }}" alt="itirepaire"> -->
+                                            <img class="main-logo" src="{{ asset('images/partners/7.png') }}" title="Londis" alt="itirepaire">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-6 sm-p-10">
+                            <div class="relation-box">
+                                <div class="partner-item">
+                                    <div class="logo-img">
+                                        <a href="https://www.nisalocally.co.uk/">
+                                            <!-- <img class="hover-logo" src="{{ asset('images/partners/8.png') }}" alt="itirepaire"> -->
+                                            <img class="main-logo" src="{{ asset('images/partners/8.png') }}" title="Nisa locally" alt="itirepaire">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+            </div>
+            <!-- our relations End -->
             
             <!-- Call Us Section Start -->
             <div class="rs-call-us bg1 pt-120 md-pt-80" style="background-image: url('{{ asset('images/bg/testimonial-bg.png')}}');">                
@@ -353,7 +584,7 @@
             <!-- Call Us Section Start -->
 
             <!-- Counter Section Start -->
-            <div class="rs-counter main-counter-home">
+            <!-- <div class="rs-counter main-counter-home">
                  <div class="counter-top-area text-center bg2" style="background-image: url('{{ asset('images/bg/counter-bg.png')}}');">
                      <div class="row">
                          <div class="col-lg-4 md-mb-40">
@@ -388,93 +619,70 @@
                          </div>
                      </div> 
                  </div>
-            </div>
+            </div> -->
             <!-- Counter Section End -->
 
-            <!-- Services Section Start -->
-            {{--<div class="rs-services style4 modify1 services3 gray-color pt-120 md-pt-80">
-            </div>
-            <!-- Services Section End -->
-
             <!-- Partner Start -->
-            <div class="rs-partner pt-80 pb-70">
+            <div class="rs-partner pt-20 pb-20">
                 <div class="container">
-                    <div class="rs-carousel owl-carousel" data-loop="true" data-items="5" data-margin="30" data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false" data-mobile-device="2" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="3" data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="2" data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="5" data-md-device-nav="false" data-md-device-dots="false">
-                        <div class="partner-item">
+                    <div class="rs-carousel owl-carousel" data-loop="true" data-items="5" data-margin="30" 
+                    data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" 
+                    data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false" 
+                    data-mobile-device="2" data-mobile-device-nav="false" data-mobile-device-dots="false" 
+                    data-ipad-device="3" data-ipad-device-nav="false" data-ipad-device-dots="false" 
+                    data-ipad-device2="3" data-ipad-device-nav2="false" data-ipad-device-dots2="false" 
+                    data-md-device="5" data-md-device-nav="false" data-md-device-dots="false">
+                        <div class="partner-item" style="text-align: center;">
                             <div class="logo-img">
-                                <a href="https://rstheme.com/">
-                                    <img class="hover-logo" src="assets/images/partner/1.png" alt="">
-                                    <img class="main-logo" src="assets/images/partner/1.png" alt="">
+                                <a href="http://itirepairs.co.uk/">
+                                    <img class="hover-logo" src="{{ asset('images/brands/1.png') }}" alt="">
+                                    <img class="main-logo" src="{{ asset('images/brands/1.png') }}" alt="">
                                 </a>
                             </div>
                         </div>
-                        <div class="partner-item">
+                        <div class="partner-item" style="text-align: center;">
                             <div class="logo-img">
-                                <a href="https://rstheme.com/">
-                                    <img class="hover-logo" src="assets/images/partner/2.png" alt="">
-                                    <img class="main-logo" src="assets/images/partner/2.png" alt="">
+                                <a href="http://itirepairs.co.uk/">
+                                    <img class="hover-logo" src="{{ asset('images/brands/2.png') }}" alt="">
+                                    <img class="main-logo" src="{{ asset('images/brands/2.png') }}" alt="">
                                 </a>
                             </div>
                         </div>
-                        <div class="partner-item">
+                        <div class="partner-item" style="text-align: center;">
                             <div class="logo-img">
-                                <a href="https://rstheme.com/">
-                                    <img class="hover-logo" src="assets/images/partner/3.png" alt="">
-                                    <img class="main-logo" src="assets/images/partner/3.png" alt="">
+                                <a href="http://itirepairs.co.uk/">
+                                    <img class="hover-logo" src="{{ asset('images/brands/3.png') }}" alt="">
+                                    <img class="main-logo" src="{{ asset('images/brands/3.png') }}" alt="">
                                 </a>
                             </div>
                         </div>
-                        <div class="partner-item">
+                        <div class="partner-item" style="text-align: center;">
                             <div class="logo-img">
-                                <a href="https://rstheme.com/">
-                                    <img class="hover-logo" src="assets/images/partner/4.png" alt="">
-                                    <img class="main-logo" src="assets/images/partner/4.png" alt="">
+                                <a href="http://itirepairs.co.uk/">
+                                    <img class="hover-logo" src="{{ asset('images/brands/4.png') }}" alt="">
+                                    <img class="main-logo" src="{{ asset('images/brands/4.png') }}" alt="">
                                 </a>
                             </div>
                         </div>
-                        <div class="partner-item">
+                        <div class="partner-item" style="text-align: center;">
                             <div class="logo-img">
-                                <a href="https://rstheme.com/">
-                                    <img class="hover-logo" src="assets/images/partner/5.png" alt="">
-                                    <img class="main-logo" src="assets/images/partner/5.png" alt="">
+                                <a href="http://itirepairs.co.uk/">
+                                    <img class="hover-logo" src="{{ asset('images/brands/5.1.png') }}" alt="">
+                                    <img class="main-logo" src="{{ asset('images/brands/5.1.png') }}" alt="">
                                 </a>
                             </div>
                         </div>
-                        <div class="partner-item">
+                        <div class="partner-item" style="text-align: center;">
                             <div class="logo-img">
-                                <a href="https://rstheme.com/">
-                                    <img class="hover-logo" src="assets/images/partner/6.png" alt="">
-                                    <img class="main-logo" src="assets/images/partner/6.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="partner-item">
-                            <div class="logo-img">
-                                <a href="https://rstheme.com/">
-                                    <img class="hover-logo" src="assets/images/partner/7.png" alt="">
-                                    <img class="main-logo" src="assets/images/partner/7.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="partner-item">
-                            <div class="logo-img">
-                                <a href="https://rstheme.com/">
-                                    <img class="hover-logo" src="assets/images/partner/8.png" alt="">
-                                    <img class="main-logo" src="assets/images/partner/8.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="partner-item">
-                            <div class="logo-img">
-                                <a href="https://rstheme.com/">
-                                    <img class="hover-logo" src="assets/images/partner/9.png" alt="">
-                                    <img class="main-logo" src="assets/images/partner/9.png" alt="">
+                                <a href="http://itirepairs.co.uk/">
+                                    <img class="hover-logo" src="{{ asset('images/brands/6.png') }}" alt="">
+                                    <img class="main-logo" src="{{ asset('images/brands/6.png') }}" alt="">
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div> --}}
+            </div>
             <!-- Partner End -->
 
         </div> 
@@ -485,7 +693,7 @@
             <div class="footer-top">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-4 col-md-12 col-sm-12 footer-widget">
+                        <div class="col-lg-4 col-md-6 col-sm-12 footer-widget">
                             <div class="footer-logo mb-30">
                                 <a href="index-2.html"><img src="{{ asset('images/itislide-3.png') }}" alt="itirepaire"></a>
                             </div>
@@ -508,11 +716,11 @@
                                                                            
                               </ul>
                         </div>
-                        <div class="col-lg-5 col-md-12 col-sm-12 pl-45 md-pl-15 md-mb-30">
+                        <div class="col-lg-5 col-md-6 col-sm-12 pl-45 md-pl-15 md-mb-30">
                             <h3 class="widget-title">Our Services</h3>
                             <ul class="site-map">
-                            <li><a href="{{ url('/network-infrastucture') }}">Network Infrastucture and Installation</a></li>
-                            <li><a href="{{ url('/surveillance-system') }}">Surveillance System Installation</a></li>
+                            <li><a href="{{ url('/network-infrastucture') }}">IT Facility Management</a></li>
+                            <li><a href="{{ url('/security-system') }}">Security System Installation</a></li>
                             <li><a href="{{ url('/digital-display') }}">Digital Display and Advertisement Screens</a></li>
                             <li><a href="{{ url('/speech-system') }}">Speech Transfer System</a></li>
                             <li><a href="{{ url('/wifi-solution') }}">Commercial WiFi Solutions and Access control</a></li>
@@ -549,11 +757,11 @@
                                     </div>
                                 </li>
                             </ul>
-                            <p>
+                            <!-- <p>
                                 <input type="email" name="EMAIL" placeholder="Your email address" required="">
                                 <em class="paper-plane"><input type="submit" value="Sign up"></em>
                                 <i class="flaticon-send"></i>
-                            </p>
+                            </p> -->
                         </div>
                     </div>
                 </div>
@@ -587,6 +795,20 @@
             <i class="fa fa-angle-up"></i>
         </div>
         <!-- End scrollUp  -->
+
+        <!-- start cookie consent model -->
+        <div class="cookie-consent-model">
+            <div class="content">
+                <img src="{{ asset('images/cookie2.png')}}" alt="itirepaire">
+                <h3>Allow Cookies</h3>
+                <p>This website use cookies to ensure you get the best experience on our site</p>
+                <div class="btns">
+                    <button class="btn btn-secondary cancel">Cancel</button>
+                    <button class="btn accept">Accept</button>
+                </div>
+            </div>
+        </div>
+        <!-- End cookie consent model -->
 
         <!-- Search Modal Start -->
         <div aria-hidden="true" class="modal fade search-modal" role="dialog" tabindex="-1">
@@ -640,5 +862,7 @@
         <script src="{{ asset('js/contact.form.js') }}"></script>
         <!-- main js -->
         <script src="{{ asset('js/main.js') }}"></script>
+        <!-- cookie js -->
+        <script src="{{ asset('js/cookie-style1.js') }}"></script>
 </body>
 </html>

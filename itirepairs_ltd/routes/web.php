@@ -30,7 +30,7 @@ Route::get('/services', function () {
 });
 
 Route::get('/network-infrastucture', [ServicePagesController::class, 'network_index']);
-Route::get('/surveillance-system', [ServicePagesController::class, 'cctv_index']);
+Route::get('/security-system', [ServicePagesController::class, 'cctv_index']);
 Route::get('/digital-display', [ServicePagesController::class, 'screen_index']);
 Route::get('/speech-system', [ServicePagesController::class, 'speech_index']);
 Route::get('/web-development', [ServicePagesController::class, 'web_index']);
@@ -43,6 +43,10 @@ Route::get('/about', function () {
 
 Route::get('/contact', function () {
     return view('pages.contact');
+});
+
+Route::get('/card', function () {
+    return view('Services.card');
 });
 
 Auth::routes();

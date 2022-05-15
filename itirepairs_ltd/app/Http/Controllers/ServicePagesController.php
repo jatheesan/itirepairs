@@ -17,14 +17,14 @@ class ServicePagesController extends Controller
     {
         $images = ServiceImage::where('service_id', 1)->get();
 
-        return view('Services.Network_Infrastucture', compact('images'));
+        return view('Services.IT_Facility', compact('images'));
     }
 
     public function cctv_index()
     {
         $images = ServiceImage::where('service_id', 2)->get();
 
-        return view('Services.Surveillance_System', compact('images'));
+        return view('Services.Security_System', compact('images'));
     }
 
     public function screen_index()
