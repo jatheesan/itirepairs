@@ -106,10 +106,23 @@ class ServiceImageController extends Controller
      */
     public function update(UpdateServiceImageRequest $request, $serviceImage)
     {
-
         $update_image = ServiceImage::find($serviceImage);
+        $serviceid = $update_image -> service_id;
+        //dd($serviceid);
+        if($request->get('id') != $update_image -> is_main)
+        {
+            if($request->get('is_main') == 1){
+                $affected = ServiceImage::where('service_id', $serviceid)->update(array('is_main' => 0));
+            }
+        }
         $update_image -> service_id = $request->get('service_id');
-        $update_image -> is_main = $request->get('is_main');
+        if($request->get('is_main') != null)
+        {
+            $update_image -> is_main = $request->get('is_main');
+        }
+        else{
+            $update_image -> is_main = 0;
+        }
 
         $update_image -> save();
         return redirect('/images/view')->with('success', 'Image details Updated!');

@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="{{ asset('images/itislide-5.png')}}">
 
     <!-- Bootstrap v5.1.3 css -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.css') }}">
     <!-- font-awesome css -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/font-awesome.min.css') }}">
     <!-- flaticon css -->
@@ -26,9 +26,9 @@
     <!-- gallery css -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/gallery.css') }}">
     <!-- cookie css -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/cookie-style1.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/cookiestyle.css') }}">
     
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/service-card.css') }}">
+    <!-- <link rel="stylesheet" type="text/css" href="{{ asset('css/service-card.css') }}"> -->
 </head>
 <body class="defult-home">
         
@@ -175,10 +175,10 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 col-md-6 col-sm-12 footer-widget">
-                            <div class="footer-logo mb-30">
-                                <a href="index-2.html"><img src="{{ asset('images/itislide-3.png') }}" alt="itirepaire"></a>
+                            <div class="footer-logo mb-30 md-mb-10">
+                                <a href="{{ url('/') }}"><img src="{{ asset('images/itislide-3.png') }}" alt="itirepaire"></a>
                             </div>
-                              <div class="textwidget pb-30"><p>Sedut perspiciatis unde omnis iste natus error sitlutem acc usantium doloremque denounce with illo inventore veritatis</p>
+                              <div class="textwidget pb-30 md-pb-10"><p align="justify">ITi Repairs© Ltd is located on the High Street in East Ham, a popular town situated in East London. Our customers are from all over England.</p>
                               </div>
                               <ul class="footer-social md-mb-30">  
                                   <li> 
@@ -197,19 +197,19 @@
                                                                            
                               </ul>
                         </div>
-                        <div class="col-lg-5 col-md-6 col-sm-12 pl-45 md-pl-15 md-mb-30">
-                            <h3 class="widget-title">Our Services</h3>
+                        <div class="col-lg-5 col-md-6 col-sm-12 pl-45 md-pl-15 md-mb-20">
+                            <h3 class="widget-title header-bottom">Our Services</h3>
                             <ul class="site-map">
                                 <li><a href="{{ url('/network-infrastucture') }}">IT Facility Management</a></li>
-                                <li><a href="{{ url('/security-system') }}">Security System Installation</a></li>
-                                <li><a href="{{ url('/digital-display') }}">Digital Display and Advertisement Screens</a></li>
                                 <li><a href="{{ url('/speech-system') }}">Speech Transfer System</a></li>
-                                <li><a href="{{ url('/wifi-solution') }}">Commercial WiFi Solutions and Access control</a></li>
-                                <li><a href="{{ url('/web-development') }}">Web Development</a></li>
+                                <li><a href="{{ url('/security-system') }}">Security System Installation</a></li>
+                                <li><a href="{{ url('/web-development') }}">Web Development & Hosting</a></li>
+                                <li><a href="{{ url('/digital-display') }}">Digital Display & Advertisement Screens</a></li>
+                                <li><a href="{{ url('/wifi-solution') }}">Commercial WiFi Solutions & Access control</a></li>
                             </ul>
                         </div>
-                        <div class="col-lg-3 col-md-12 col-sm-12 md-mb-30">
-                            <h3 class="widget-title">Contact Info</h3>
+                        <div class="col-lg-3 col-md-12 col-sm-12 md-mb-20">
+                            <h3 class="widget-title header-bottom">Contact Info</h3>
                             <ul class="address-widget">
                                 <li>
                                     <i class="flaticon-location"></i>
@@ -250,7 +250,7 @@
             <div class="footer-bottom">
                 <div class="container">                    
                     <div class="row y-middle">
-                        <div class="col-lg-6 text-right md-mb-10 order-last">
+                        <!-- <div class="col-lg-6 text-right md-mb-10 order-last">
                             <ul class="copy-right-menu">
                                 <li><a href="{{ url('/') }}">Home</a></li>
                                 <li><a href="{{ url('/about') }}">About</a></li>
@@ -258,10 +258,10 @@
                                 <li><a href="shop.html">Shop</a></li>
                                 <li><a href="faq.html">FAQs</a></li>
                             </ul>
-                        </div>
-                        <div class="col-lg-6">
+                        </div> -->
+                        <div class="col-lg-12 text-center">
                             <div class="copyright">
-                                <p>&copy; 2022 All Rights Reserved. Developed By <a href="http://itirepairs.co.uk/">ITIrepairs</a></p>
+                                <p>&copy; <script>document.write(new Date().getFullYear())</script> All Rights Reserved. Developed By <a style="color: #106eea;" href="http://itirepairs.co.uk/">ITIrepairs</a></p>
                             </div>
                         </div>
                         
@@ -280,12 +280,13 @@
         <!-- start cookie consent model -->
         <div class="cookie-consent-model">
             <div class="content">
-                <img src="{{ asset('images/cookie2.png')}}" alt="itirepaire">
-                <h3>Allow Cookies</h3>
-                <p>This website use cookies to ensure you get the best experience on our site</p>
+                <div class="para">
+                    <img src="{{ asset('images/cookie2.png')}}" alt="itirepaire">
+                    <p>This website use cookies to ensure you get the best experience on our site</p>
+                </div>
                 <div class="btns">
-                    <button class="btn btn-secondary cancel">Cancel</button>
-                    <button class="btn accept">Accept</button>
+                    <button class="btn cancel borleft">Cancel</button>
+                    <button class="btn accept borright">Accept</button>
                 </div>
             </div>
         </div>
@@ -315,7 +316,7 @@
         <!-- jquery latest version -->
         <script src="{{ asset('js/jquery.min.js') }}"></script>
         <!-- Bootstrap v5.1.3 js -->
-        <script src="{{ asset('js/app.js') }}"></script>
+        <script src="{{ asset('js/bootstrap.js') }}"></script>
         <!-- Menu js -->
         <script src="{{ asset('js/rsmenu-main.js') }}"></script> 
         <!-- op nav js -->
@@ -327,7 +328,7 @@
         <!-- main js -->
         <script src="{{ asset('js/main.js') }}"></script>
         <!-- cookie js -->
-        <script src="{{ asset('js/cookie-style1.js') }}"></script>
+        <script src="{{ asset('js/cookiestyle.js') }}"></script>
         </body>
 
 </html>

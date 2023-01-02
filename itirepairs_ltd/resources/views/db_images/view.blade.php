@@ -118,7 +118,7 @@
                                     @foreach($images as $image)
                                     <div class="col-md-3 col-sm-6 pt-1 ps-1">
                                         @if($image -> is_main == 1)
-                                        <div class="card" style="background-color: #5968f3 !important; border:5px solid #5968f3; border-bottom: 0px;">
+                                        <div class="card" style="background-color: #6136ba !important; border:5px solid #6136ba; border-bottom: 0px;">
                                         @else
                                         <div class="card" style="background-color: #8994f7 !important; border:5px solid #8994f7; border-bottom: 0px;">
                                         @endif

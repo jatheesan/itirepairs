@@ -70,7 +70,7 @@ a:hover {
   object-fit: cover;
   position: relative;
 }
-.postcard .postcard__img_link {
+.postcard .__img_link {
   display: contents;
 }
 .postcard .postcard__bar {

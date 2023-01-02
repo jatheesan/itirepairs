@@ -744,7 +744,7 @@
         text-align: center;
     }
     .rs-footer .footer-top p{
-        max-width: 380px;
+        max-width: auto;
     }
     .rs-pricing .pricing-table{
         max-width: 500px;
@@ -1263,7 +1263,7 @@
         font-size: 40px;
     }
     .rs-footer .footer-top p{
-        max-width: 280px;
+        max-width: auto;
     }
     .rs-blog .blog-item .blog-content .blog-title {
         font-size: 17px;

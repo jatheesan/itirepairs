@@ -39,9 +39,9 @@
                 <div class="col-lg-6 d-none d-lg-block">
                     <img src="{{ asset('images/s-cctv/cctvcam1.jpg')}}" class="mx-auto d-block image-3db" alt="itirepaire">
                 </div>
-                <div class="col-lg-6 px-5 zero-padding">
-                    <h3 class="txt-blue">Installation & Maintenance</h3>
-                    <img src="{{ asset('images/s-cctv/cctvcam1.jpg')}}" class="d-lg-none image-3db" alt="itirepaire">
+                <div class="col-lg-6 px-5 pb-30 md-pb-0 xs-30 zero-padding">
+                    <h3 class="line txt-blue">Installation & Maintenance</h3>
+                    <img src="{{ asset('images/s-cctv/cctvcam1.jpg')}}" class="d-lg-none img-show image-3db" alt="itirepaire">
                     <ul class="listing-style li-bold">
                         <li>
                             <span><i class="fa fa-check-circle"></i>We specialise in creating bespoke solutions to suit for our customers.</span>
@@ -60,21 +60,24 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-6 py-5 px-5 zero-padding">
-                    <h3 class="txt-blue">Commercial Security System Installation</h3>
-                    <img src="{{ asset('images/s-cctv/cctvcam3.jpg')}}" class="d-lg-none image-3da" alt="itirepaire">
+                <div class="col-lg-6 px-5 pt-30 md-pt-40 sm-pt-40 zero-padding">
+                    <h3 class="line txt-blue">Commercial Security Systems</h3>
+                    <img src="{{ asset('images/s-cctv/cctvcam3.jpg')}}" class="d-lg-none img-show image-3da" alt="itirepaire">
                     <ul class="listing-style li-bold">
                         <li>
-                            <span><i class="fa fa-check-circle"></i>We use CAT6 or Coax-Cables for CCTV Installations.</span>
+                            <span><i class="fa fa-check-circle"></i>We install IP Cameras for most of the installations.</span>
                         </li>
                         <li>
-                            <span><i class="fa fa-check-circle"></i>NVRs/ DVRs are capable of minimum H265 or H265+ compression so that customers can have double the length of recordings in their hard drives.</span>
+                            <span><i class="fa fa-check-circle"></i>Our installation are varying from simple NVR system to 
+                                Enhanced security options such as AI Learning, Facial and Behavior ananlyses systems and 
+                                and Automated number plate recognition cameras.
+                            </span>
                         </li>
                         <li>
-                            <span><i class="fa fa-check-circle"></i>Leading standards such as POE or POC installations are performed by experienced installers.</span>
+                            <span><i class="fa fa-check-circle"></i>Forecourt CCTVs are mostly useful to our clients from Exeter to Liverpool. Nationwide installation and Maintenance Service.</span>
                         </li>
                         <li>
-                            <span><i class="fa fa-check-circle"></i>Wireless security cameras are becoming popular, those may need less wiring in the walls.</span>
+                            <span><i class="fa fa-check-circle"></i>24/7 Colour cameras are providing color video even in the night time.</span>
                         </li>
                     </ul>
                 </div>
@@ -84,9 +87,9 @@
                 <div class="col-lg-6 d-none d-lg-block">
                     <img src="{{ asset('images/s-cctv/cctv2.jpg')}}" class="mx-auto d-block image-3db" alt="itirepaire">
                 </div>
-                <div class="col-lg-6 px-5 zero-padding">
-                    <h3 class="txt-blue">Domestic Security System Installation</h3>
-                    <img src="{{ asset('images/s-cctv/cctv2.jpg')}}" class="d-lg-none image-3db" alt="itirepaire">
+                <div class="col-lg-6 px-5 pt-30 md-pt-40 sm-pt-30 zero-padding">
+                    <h3 class="line txt-blue">Domestic Security System Installation</h3>
+                    <img src="{{ asset('images/s-cctv/cctv2.jpg')}}" class="d-lg-none img-show image-3db" alt="itirepaire">
                     <ul class="listing-style li-bold">
                         <li>
                             <span><i class="fa fa-check-circle"></i>As a part of the installation, we provide a one year free Dynamic DNS service worth £25/Year.</span>
@@ -99,9 +102,9 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-6 pt-5 px-5 zero-padding">
-                    <h3 class="txt-blue">Thermal Imaging & Temperature Monitoring</h3>
-                    <img src="{{ asset('images/s-cctv/thermal1.jpg')}}" class="d-lg-none image-3da" alt="itirepaire">
+                <div class="col-lg-6 px-5 pt-30 md-pt-40 sm-pt-30 zero-padding">
+                    <h3 class="line txt-blue">Thermal Imaging & Temperature Monitoring</h3>
+                    <img src="{{ asset('images/s-cctv/thermal1.jpg')}}" class="d-lg-none img-show image-3da" alt="itirepaire">
                     <ul class="listing-style li-bold">
                         <li>
                             <span><i class="fa fa-check-circle"></i>Thermal imaging systems generally have been shown to accurately measure someone’s surface skin temperature without being physically close to the person being evaluated.</span>
@@ -117,8 +120,8 @@
                 <div class="col-lg-6 pt-5 d-none d-lg-block">
                     <img src="{{ asset('images/s-cctv/thermal1.jpg')}}" class="mx-auto d-block image-3da" alt="itirepaire">
                 </div>
+                <div class="md-pt-10 xs-pt-0"><hr/></div>
             </div>
-            <hr/>
         </div>
     </div>
     <!-- Services Single End -->
@@ -174,10 +177,10 @@
     <!-- Services Single End -->
 
     <!-- Service Carousel Section Start -->
-    <div class="rs-why-choose style2 pt-40 pb-40 md-pt-20 md-pb-20">
+    <div class="rs-why-choose style2 pb-40 md-pb-20">
         <div class="container">
             <div class="row">
-                <div class="col-xl-7 col-lg-8 md-mb-50">
+                <div class="col-xl-7 col-lg-8 md-mb-0">
                     @if(count($images) == 0)
                     <div class="services-img">
                         <img src="{{ asset('images/services/single/1.jpg') }}" alt="">
@@ -208,7 +211,7 @@
                     </div>
                     @endif
                 </div>
-                <div class="col-xl-5 col-lg-4 md-mb-30">
+                <div class="col-xl-5 col-lg-4 md-mb-30 d-none d-lg-block">
                     <div class="rs-contact mod1">
                         <div class="contact-wrap">
                             <div class="content-part mb-25">

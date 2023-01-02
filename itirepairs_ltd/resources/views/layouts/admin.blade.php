@@ -42,7 +42,8 @@
         <li class="nav-item dropdown pe-5">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="assets/img/profile-img.jpg" alt="Profile-imag" class="rounded-circle">
+            <!-- <img src="assets/img/profile-img.jpg" alt="Profile-imag" class="rounded-circle"> -->
+            <span style="font-size : 1.8rem;"><i class="bi bi-person-circle"></i></span>
             <span class="d-none d-md-block dropdown-toggle ps-2">{{ Auth::user()->name }}</span>
           </a><!-- End Profile Iamge Icon -->
 
@@ -190,7 +191,7 @@
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer mt-auto fixed-bottom">
     <div class="copyright">
-      &copy; Copyright <strong></strong>. All Rights Reserved
+      &copy; Copyright <strong><script>document.write(new Date().getFullYear())</script></strong>. All Rights Reserved
     </div>
     <div class="credits">
         Designed by <a href="http://itirepairs.co.uk/">ITIrepairs</a>

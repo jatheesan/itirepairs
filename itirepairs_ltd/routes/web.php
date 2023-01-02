@@ -45,9 +45,9 @@ Route::get('/contact', function () {
     return view('pages.contact');
 });
 
-Route::get('/card', function () {
-    return view('Services.card');
-});
+// Route::get('/card', function () {
+//     return view('Services.card');
+// });
 
 Auth::routes();
 
@@ -77,4 +77,9 @@ Route::group(['middleware' => ['auth']], function() {
     Route::patch('/images/update/{id}', [ServiceImageController::class, 'update'])->name('image.update');
     Route::delete('/images/delete/{id}', [ServiceImageController::class, 'destroy'])->name('image.delete');
 
+});
+
+Route::get('/clear-cache', function() {
+    $exitCode = Artisan::call('config:cache');
+    return view('index');
 });

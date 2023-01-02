@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 @section('pagetitle','Services')
 @section('content')
-<section class="section">
+<section class="section" style="margin-bottom: 50px;">
       <div class="row">
         <div class="col-lg-12">
 
@@ -65,9 +65,13 @@
                         <td>{{ $service->service_name }}</td>
                         <td>
                           <div class="btn-group">
-                            <a href="#" class="btn btn-ad" data-bs-toggle="modal" data-bs-target="#editModal{{$service->id}}"><i class="bi bi-pencil-fill"></i></a>
+                            <span title='disable for edit'>
+                              <a href="#" class="btn btn-ad" data-bs-toggle="modal" data-bs-target="#editModal{{$service->id}}"  style="pointer-events: none"><i class="bi bi-pencil-fill"></i></a>
+                            </span>
                             @include('db_services.edit')
-                            <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal{{$service->id}}"><i class="bi bi-trash"></i></a>
+                            <span title='disable for delete'>
+                              <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal{{$service->id}}"  style="pointer-events: none"><i class="bi bi-trash"></i></a>
+                            </span>
                             @include('db_services.delete')
                           </div>
                         </td>

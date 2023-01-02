@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="{{ asset('images/itislide-5.png')}}">
 
     <!-- Bootstrap v4.4.1 css -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.css') }}">
     <!-- font-awesome css -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/font-awesome.min.css') }}">
     <!-- flaticon css -->
@@ -32,7 +32,7 @@
     <!-- responsive css -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/responsive.css') }}">
     <!-- cookie css -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/cookie-style1.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/cookiestyle.css') }}">
 </head>
 <body class="defult-home">
         
@@ -157,10 +157,10 @@
                     <div class="slider-content slide1" style="background-image: url('{{ asset('images/slider/slider-1-1.jpg')}}');">
                         <div class="container">
                             <div class="content-part text-center">
-                                <div class="sl-sub-title wow bounceInLeft" data-wow-delay="300ms" data-wow-duration="2000ms">Enabling The Success of</div>
-                                <h1 class="sl-title mb-mb-10 wow fadeInRight" data-wow-delay="600ms" data-wow-duration="2000ms">Your Business</h1>
-                                <div class="sl-desc wow fadeInUp" data-wow-delay="900ms" data-wow-duration="2000ms">
-                                by Taking Care of Your IT Needs
+                                <!-- <div class="sl-desc wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms"></div> -->
+                                <h1 class="sl-title mb-mb-10 wow fadeInRight" data-wow-delay="600ms" data-wow-duration="2000ms">Forecourt CCTV</h1>
+                                <div class="sl-sub-title wow bounceInLeft" data-wow-delay="900ms" data-wow-duration="2000ms">
+                                Installation and Maintenance
                                 </div>
                                 <div class="sl-btn wow fadeInUp" data-wow-delay="200ms" data-wow-duration="3000ms">
                                     <a class="readon learn-more slider-btn" href="{{ url('/about') }}">Get in touch</a>
@@ -171,10 +171,10 @@
                     <div class="slider-content slide2" style="background-image: url('{{ asset('images/slider/slider-2.jpg')}}');">
                         <div class="container">
                             <div class="content-part text-center">
-                                <div class="sl-sub-title wow bounceInLeft" data-wow-delay="300ms" data-wow-duration="2000ms">We Increase Your</div>
-                                <h1 class="sl-title mb-mb-10 wow fadeInRight" data-wow-delay="600ms" data-wow-duration="2000ms">Business Success</h1>
-                                <div class="sl-desc fadeInUp" data-wow-delay="900ms" data-wow-duration="2000ms">
-                                    Using modern technogoly and IT Services
+                                <!-- <div class="sl-desc fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms">We Increase Your</div> -->
+                                <h1 class="sl-title mb-mb-10 wow fadeInRight" data-wow-delay="600ms" data-wow-duration="2000ms">Network and IT</h1>
+                                <div class="sl-sub-title wow bounceInLeft" data-wow-delay="900ms" data-wow-duration="2000ms">
+                                    Support Services
                                 </div>
                                 <ul class="slider-btn wow fadeInRight" data-wow-delay="200ms" data-wow-duration="3000ms">
                                     <li><a class="readon learn-more slider-btn" href="{{ url('/contact') }}">Free Consultation</a></li>
@@ -332,7 +332,7 @@
             <!-- Services Section End -->
 
             <!-- why choose us Start -->
-              <div class="rs-process modify1 pt-160 pb-120 md-pt-75 md-pb-80">
+              <div class="rs-process modify1 pt-160 pb-120 md-pt-75 md-pb-80 d-none d-sm-block">
                   <div class="shape-animation">
                       <div class="shape-process">
                           <img class="dance2" src="{{ asset('images/process/circle.png') }}" alt="itirepaire" width="60%">
@@ -375,7 +375,7 @@
                                               <div class="number-title">
                                                   <h3 class="title">Expert CCTV Advisors</h3>
                                               </div>
-                                              <p class="number-txt">  Quisque placerat vitae lacus ut scelerisque. Fusce luctus odio ac nibh luctus, in porttitor theo lacus egestas.</p>
+                                              <p class="number-txt">  CCTV Camera Pros provides expert security camera system design and consulting services for residential, commercial, and government installation.</p>
                                           </div>
                                       </div>
                                   </div>
@@ -388,7 +388,7 @@
                                               <div class="number-title">
                                                   <h3 class="title">Attention to Detail</h3>
                                               </div>
-                                              <p class="number-txt">Quisque placerat vitae lacus ut scelerisque. Fusce luctus odio ac nibh luctus, in porttitor theo lacus egestas.</p>
+                                              <p class="number-txt"> We are focus on the details of each project, so that no part - large or small - is overlooked.</p>
                                           </div>
                                       </div>
                                   </div>
@@ -401,7 +401,7 @@
                                               <div class="number-title">
                                                   <h3 class="title">Highly Qualified Engineers</h3>
                                               </div>
-                                              <p class="number-txt">Quisque placerat vitae lacus ut scelerisque. Fusce luctus odio ac nibh luctus, in porttitor theo lacus egestas.</p>
+                                              <p class="number-txt">We have a dynamic team of highly qualified and motivated engineers, from a variety of backgrounds, backed up by dedicated support staff.</p>
                                           </div>
                                       </div>
                                   </div>
@@ -414,7 +414,7 @@
                                               <div class="number-title">
                                                   <h3 class="title">No Compromise on Quality</h3>
                                               </div>
-                                              <p class="number-txt">Quisque placerat vitae lacus ut scelerisque. Fusce luctus odio ac nibh luctus, in porttitor theo lacus egestas.</p>
+                                              <p class="number-txt">We introduce innovative and quality products and solutions to the client.we provide customer satisfaction and providing the right product based on the requirements of the client.</p>
                                           </div>
                                       </div>
                                   </div>
@@ -427,7 +427,7 @@
                                               <div class="number-title">
                                                   <h3 class="title">Unrivalled Customer Care</h3>
                                               </div>
-                                              <p class="number-txt">Quisque placerat vitae lacus ut scelerisque. Fusce luctus odio ac nibh luctus, in porttitor theo lacus egestas.</p>
+                                              <p class="number-txt">we provide continual communication with customers and a technology platform that is intuitive and easy to use.</p>
                                           </div>
                                       </div>
                                   </div>
@@ -441,7 +441,7 @@
             <!-- our relations Start -->
             <div class="rs-services style4 modify1 services3 mt-30">
                 <div class="container">
-                   <div class="sec-title2 text-center mb-45 md-mb-30 pl-40 pr-40 md-pl-25 md-pr-25 sm-pl-0 sm-pr-0">
+                   <div class="sec-title2 text-center mb-45 md-mb-30 pl-35 pr-35 md-pl-25 md-pr-25 sm-pl-0 sm-pr-0">
                        <!-- <span class="sub-text white-color">Project</span> -->
                     <h2 class="title txt-blue">
                         MOST COMPANIES HAVE CLIENTS WE HAVE RELATIONSHIPS!
@@ -455,7 +455,7 @@
                                 <div class="partner-item">
                                     <div class="logo-img">
                                         <a href="https://www.costcutter.co.uk/">
-                                            <!-- <img class="hover-logo" src="{{ asset('images/partners/1.png') }}" alt="itirepaire"> -->
+                                            <img class="hover-logo" src="{{ asset('images/partners/1.png') }}" title="Costcutter" alt="itirepaire">
                                             <img class="main-logo" src="{{ asset('images/partners/1.png') }}" title="Costcutter" alt="itirepaire">
                                         </a>
                                     </div>
@@ -467,7 +467,7 @@
                                 <div class="partner-item">
                                     <div class="logo-img">
                                         <a href="https://www.bp.com/">
-                                            <!-- <img class="hover-logo" src="{{ asset('images/partners/2.png') }}" alt="itirepaire"> -->
+                                            <img class="hover-logo" src="{{ asset('images/partners/2.png') }}" title="British Petroleum" alt="itirepaire">
                                             <img class="main-logo" src="{{ asset('images/partners/2.png') }}" title="British Petroleum" alt="itirepaire">
                                         </a>
                                     </div>
@@ -479,7 +479,7 @@
                                 <div class="partner-item">
                                     <div class="logo-img">
                                         <a href="https://texaco.co.uk/">
-                                            <!-- <img class="hover-logo" src="{{ asset('images/partners/3.png') }}" alt="itirepaire"> -->
+                                            <img class="hover-logo" src="{{ asset('images/partners/3.png') }}" title="Texaco" alt="itirepaire">
                                             <img class="main-logo" src="{{ asset('images/partners/3.png') }}" title="Texaco" alt="itirepaire">
                                         </a>
                                     </div>
@@ -491,7 +491,7 @@
                                 <div class="partner-item">
                                     <div class="logo-img">
                                         <a href="https://www.esso.co.uk/en-gb/">
-                                            <!-- <img class="hover-logo" src="{{ asset('images/partners/4.png') }}" alt="itirepaire"> -->
+                                            <img class="hover-logo" src="{{ asset('images/partners/4.png') }}" title="Esso" alt="itirepaire">
                                             <img class="main-logo" src="{{ asset('images/partners/4.png') }}" title="Esso" alt="itirepaire">
                                         </a>
                                     </div>
@@ -503,7 +503,7 @@
                                 <div class="partner-item">
                                     <div class="logo-img">
                                         <a href="https://www.shell.co.uk/">
-                                            <!-- <img class="hover-logo" src="{{ asset('images/partners/5.png') }}" alt="itirepaire"> -->
+                                            <img class="hover-logo" src="{{ asset('images/partners/5.png') }}" title="Shell" alt="itirepaire">
                                             <img class="main-logo" src="{{ asset('images/partners/5.png') }}" title="Shell" alt="itirepaire">
                                         </a>
                                     </div>
@@ -515,7 +515,7 @@
                                 <div class="partner-item">
                                     <div class="logo-img">
                                         <a href="https://www.thesouthernco-operative.co.uk/">
-                                            <!-- <img class="hover-logo" src="{{ asset('images/partners/6.png') }}" alt="itirepaire"> -->
+                                            <img class="hover-logo" src="{{ asset('images/partners/6.png') }}" title="Southernco-operative" alt="itirepaire">
                                             <img class="main-logo" src="{{ asset('images/partners/6.png') }}" title="Southernco-operative" alt="itirepaire">
                                         </a>
                                     </div>
@@ -527,7 +527,7 @@
                                 <div class="partner-item">
                                     <div class="logo-img">
                                         <a href="https://www.londis.co.uk/">
-                                            <!-- <img class="hover-logo" src="{{ asset('images/partners/7.png') }}" alt="itirepaire"> -->
+                                            <img class="hover-logo" src="{{ asset('images/partners/7.png') }}" title="Londis" alt="itirepaire">
                                             <img class="main-logo" src="{{ asset('images/partners/7.png') }}" title="Londis" alt="itirepaire">
                                         </a>
                                     </div>
@@ -539,7 +539,7 @@
                                 <div class="partner-item">
                                     <div class="logo-img">
                                         <a href="https://www.nisalocally.co.uk/">
-                                            <!-- <img class="hover-logo" src="{{ asset('images/partners/8.png') }}" alt="itirepaire"> -->
+                                            <img class="hover-logo" src="{{ asset('images/partners/8.png') }}" title="Nisa locally" alt="itirepaire">
                                             <img class="main-logo" src="{{ asset('images/partners/8.png') }}" title="Nisa locally" alt="itirepaire">
                                         </a>
                                     </div>
@@ -558,7 +558,7 @@
                     <div class="row rs-vertical-middle">
                         <div class="col-lg-6">
                             <div class="image-part">
-                              <img src="{{ asset('images/call-us/contact-here.png') }}" alt="itirepaire">
+                              <img src="{{ asset('images/call-us/illus-1.png') }}" alt="itirepaire" height="600px">
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -634,49 +634,43 @@
                     data-md-device="5" data-md-device-nav="false" data-md-device-dots="false">
                         <div class="partner-item" style="text-align: center;">
                             <div class="logo-img">
-                                <a href="http://itirepairs.co.uk/">
-                                    <img class="hover-logo" src="{{ asset('images/brands/1.png') }}" alt="">
-                                    <img class="main-logo" src="{{ asset('images/brands/1.png') }}" alt="">
+                                <a href="{{ url('/') }}">
+                                    <img src="{{ asset('images/brands/1.png') }}" alt="itirepaire">
                                 </a>
                             </div>
                         </div>
                         <div class="partner-item" style="text-align: center;">
                             <div class="logo-img">
-                                <a href="http://itirepairs.co.uk/">
-                                    <img class="hover-logo" src="{{ asset('images/brands/2.png') }}" alt="">
-                                    <img class="main-logo" src="{{ asset('images/brands/2.png') }}" alt="">
+                                <a href="{{ url('/') }}">
+                                    <img src="{{ asset('images/brands/2.png') }}" alt="itirepaire">
                                 </a>
                             </div>
                         </div>
                         <div class="partner-item" style="text-align: center;">
                             <div class="logo-img">
-                                <a href="http://itirepairs.co.uk/">
-                                    <img class="hover-logo" src="{{ asset('images/brands/3.png') }}" alt="">
-                                    <img class="main-logo" src="{{ asset('images/brands/3.png') }}" alt="">
+                                <a href="{{ url('/') }}">
+                                    <img src="{{ asset('images/brands/3.png') }}" alt="itirepaire">
                                 </a>
                             </div>
                         </div>
                         <div class="partner-item" style="text-align: center;">
                             <div class="logo-img">
-                                <a href="http://itirepairs.co.uk/">
-                                    <img class="hover-logo" src="{{ asset('images/brands/4.png') }}" alt="">
-                                    <img class="main-logo" src="{{ asset('images/brands/4.png') }}" alt="">
+                                <a href="{{ url('/') }}">
+                                    <img src="{{ asset('images/brands/4.png') }}" alt="itirepaire">
                                 </a>
                             </div>
                         </div>
                         <div class="partner-item" style="text-align: center;">
                             <div class="logo-img">
-                                <a href="http://itirepairs.co.uk/">
-                                    <img class="hover-logo" src="{{ asset('images/brands/5.1.png') }}" alt="">
-                                    <img class="main-logo" src="{{ asset('images/brands/5.1.png') }}" alt="">
+                                <a href="{{ url('/') }}">
+                                    <img src="{{ asset('images/brands/5.1.png') }}" alt="itirepaire">
                                 </a>
                             </div>
                         </div>
                         <div class="partner-item" style="text-align: center;">
                             <div class="logo-img">
-                                <a href="http://itirepairs.co.uk/">
-                                    <img class="hover-logo" src="{{ asset('images/brands/6.png') }}" alt="">
-                                    <img class="main-logo" src="{{ asset('images/brands/6.png') }}" alt="">
+                                <a href="{{ url('/') }}">
+                                    <img src="{{ asset('images/brands/6.png') }}" alt="itirepaire">
                                 </a>
                             </div>
                         </div>
@@ -694,10 +688,10 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 col-md-6 col-sm-12 footer-widget">
-                            <div class="footer-logo mb-30">
-                                <a href="index-2.html"><img src="{{ asset('images/itislide-3.png') }}" alt="itirepaire"></a>
+                            <div class="footer-logo mb-30 md-mb-10">
+                                <a href="{{ url('/') }}"><img src="{{ asset('images/itislide-3.png') }}" alt="itirepaire"></a>
                             </div>
-                              <div class="textwidget pb-30"><p>We help free up your time, money and valuable resources, allowing you to focus on taking your business to the next level of efficiency and strategic value.</p>
+                              <div class="textwidget pb-30 md-pb-10"><p align="justify">ITi Repairs© Ltd is located on the High Street in East Ham, a popular town situated in East London. Our customers are from all over England.</p>
                               </div>
                               <ul class="footer-social md-mb-30">  
                                   <li> 
@@ -716,19 +710,19 @@
                                                                            
                               </ul>
                         </div>
-                        <div class="col-lg-5 col-md-6 col-sm-12 pl-45 md-pl-15 md-mb-30">
-                            <h3 class="widget-title">Our Services</h3>
+                        <div class="col-lg-5 col-md-6 col-sm-12 pl-45 md-pl-15 md-mb-20">
+                            <h3 class="widget-title header-bottom">Our Services</h3>
                             <ul class="site-map">
-                            <li><a href="{{ url('/network-infrastucture') }}">IT Facility Management</a></li>
-                            <li><a href="{{ url('/security-system') }}">Security System Installation</a></li>
-                            <li><a href="{{ url('/digital-display') }}">Digital Display and Advertisement Screens</a></li>
-                            <li><a href="{{ url('/speech-system') }}">Speech Transfer System</a></li>
-                            <li><a href="{{ url('/wifi-solution') }}">Commercial WiFi Solutions and Access control</a></li>
-                            <li><a href="{{ url('/web-development') }}">Web Development</a></li>
+                                <li><a href="{{ url('/network-infrastucture') }}">IT Facility Management</a></li>
+                                <li><a href="{{ url('/speech-system') }}">Speech Transfer System</a></li>
+                                <li><a href="{{ url('/security-system') }}">Security System Installation</a></li>
+                                <li><a href="{{ url('/web-development') }}">Web Development & Hosting</a></li>
+                                <li><a href="{{ url('/digital-display') }}">Digital Display & Advertisement Screens</a></li>
+                                <li><a href="{{ url('/wifi-solution') }}">Commercial WiFi Solutions & Access control</a></li>
                             </ul>
                         </div>
-                        <div class="col-lg-3 col-md-12 col-sm-12 md-mb-30">
-                            <h3 class="widget-title">Contact Info</h3>
+                        <div class="col-lg-3 col-md-12 col-sm-12 md-mb-20">
+                            <h3 class="widget-title header-bottom">Contact Info</h3>
                             <ul class="address-widget">
                                 <li>
                                     <i class="flaticon-location"></i>
@@ -769,7 +763,7 @@
             <div class="footer-bottom">
                 <div class="container">                    
                     <div class="row y-middle">
-                        <div class="col-lg-6 text-right md-mb-10 order-last">
+                        <!-- <div class="col-lg-6 text-right md-mb-10 order-last">
                             <ul class="copy-right-menu">
                                 <li><a href="{{ url('/') }}">Home</a></li>
                                 <li><a href="{{ url('/about') }}">About</a></li>
@@ -777,10 +771,10 @@
                                 <li><a href="#">Shop</a></li>
                                 <li><a href="#">FAQs</a></li>
                             </ul>
-                        </div>
-                        <div class="col-lg-6">
+                        </div> -->
+                        <div class="col-lg-12 text-center">
                             <div class="copyright">
-                                <p>&copy; 2022 All Rights Reserved. Developed By <a href="http://itirepairs.co.uk/">ITIrepairs</a></p>
+                                <p>&copy; <script>document.write(new Date().getFullYear())</script> All Rights Reserved. Developed By <a style="color: #106eea;" href="http://itirepairs.co.uk/">ITIrepairs</a></p>
                             </div>
                         </div>
                         
@@ -799,12 +793,13 @@
         <!-- start cookie consent model -->
         <div class="cookie-consent-model">
             <div class="content">
-                <img src="{{ asset('images/cookie2.png')}}" alt="itirepaire">
-                <h3>Allow Cookies</h3>
-                <p>This website use cookies to ensure you get the best experience on our site</p>
+                <div class="para">
+                    <img src="{{ asset('images/cookie2.png')}}" alt="itirepaire">
+                    <p>This website use cookies to ensure you get the best experience on our site</p>
+                </div>
                 <div class="btns">
-                    <button class="btn btn-secondary cancel">Cancel</button>
-                    <button class="btn accept">Accept</button>
+                    <button class="btn cancel borleft">Cancel</button>
+                    <button class="btn accept borright">Accept</button>
                 </div>
             </div>
         </div>
@@ -863,6 +858,6 @@
         <!-- main js -->
         <script src="{{ asset('js/main.js') }}"></script>
         <!-- cookie js -->
-        <script src="{{ asset('js/cookie-style1.js') }}"></script>
+        <script src="{{ asset('js/cookiestyle.js') }}"></script>
 </body>
 </html>

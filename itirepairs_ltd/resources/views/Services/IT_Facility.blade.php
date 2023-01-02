@@ -7,9 +7,9 @@
                 <div class="col-lg-12">
                     <div class="contact-wrap">
                         <div class="sec-title mb-30">
-                            <div class="sub-text style2"><a class="active" href="{{ url('/') }}">Home</a><span> / </span><a class="active" href="{{ url('/') }}"> Services</a><span> / IT Facility Management</span></div>
+                            <div class="sub-text style2"><span> / </span><a class="active" href="{{ url('/') }}"> Services</a><span> / IT Facility Management</span><span> / IT Network and Infrastructure</span></div>
                             <h2 class="title pb-10">
-                                IT Facility Management
+                                IT Infrastructure Installaion
                             </h2>
                             <div class="pb-10 li-bold">
                                 Over 25 years working in Networking Installation services.
@@ -33,16 +33,19 @@
     <!-- About Section End -->
 
     <!-- Services Single Start -->
-    <div class="rs-services-single pt-10">
+    <div class="rs-services-single">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 d-none d-lg-block">
                     <img src="{{ asset('images/s-network/fiber3.jpg')}}" class="mx-auto d-block image-3db" alt="itirepaire">
                 </div>
-                <div class="col-lg-6 px-5 zero-padding">
-                    <h3 class="txt-blue">CAT-6 cabling and Fiber cabling</h3>
-                    <img src="{{ asset('images/s-network/fiber3.jpg')}}" class="d-lg-none image-3db" alt="itirepaire">
+                <div class="col-lg-6 px-5 pb-30 md-pb-0 xs-30 zero-padding">
+                    <h3 class="line txt-blue">Fibre and CAT6 Cabling</h3>
+                    <img src="{{ asset('images/s-network/fiber3.jpg')}}" class="d-lg-none img-show image-3db" alt="itirepaire">
                     <ul class="listing-style li-bold">
+                        <li>
+                            <span><i class="fa fa-check-circle"></i>We provide both Cat 6 Cabling and Fibre Optic Cabling for your required network.</span>
+                        </li>
                         <li>
                             <span><i class="fa fa-check-circle"></i>We are able to design, install a unique cabling system which will suit your business needs.</span>
                         </li>
@@ -78,9 +81,9 @@
                 <div class="col-lg-6 py-5 d-none d-lg-block">
                     <img src="{{ asset('images/s-network/cable2.jpg')}}" class="mx-auto d-block image-3da" alt="itirepaire">
                 </div> -->
-                <div class="col-lg-6 px-5 py-5 zero-padding">
-                    <h3 class="txt-blue">Rack Cabinet & Service Management</h3>
-                    <img src="{{ asset('images/s-network/rack4.jpg')}}" class="d-lg-none image-3db" alt="itirepaire">
+                <div class="col-lg-6 px-5 pt-30 md-pt-40 sm-pt-30 zero-padding">
+                    <h3 class="line txt-blue">Rack Cabinet & Service Management</h3>
+                    <img src="{{ asset('images/s-network/rack4.jpg')}}" class="d-lg-none img-show image-3db" alt="itirepaire">
                     <ul class="listing-style li-bold">
                         <li>
                             <span><i class="fa fa-check-circle"></i>We provide Router Setup, VLANS and Firewalls.</span>
@@ -99,17 +102,17 @@
                 <div class="col-lg-6 py-5 d-none d-lg-block">
                     <img src="{{ asset('images/s-network/rack4.jpg')}}" class="mx-auto d-block image-3db" alt="itirepaire">
                 </div>
-                <div><hr/></div>
+                <div class="md-pt-10 xs-pt-0"><hr/></div>
             </div>
         </div>
     </div>
     <!-- Services Single End -->
 
     <!-- Service Carousel Section Start -->
-    <div class="rs-why-choose style2 pt-40 pb-40 md-pt-20 md-pb-20">
+    <div class="rs-why-choose style2 pb-40 md-pb-20">
         <div class="container">
             <div class="row">
-                <div class="col-xl-7 col-lg-8 md-mb-50">
+                <div class="col-xl-7 col-lg-8 md-mb-0">
                     @if(count($images) == 0)
                     <div class="services-img">
                         <img src="{{ asset('images/services/single/1.jpg') }}" alt="">
@@ -140,7 +143,7 @@
                     </div>
                     @endif
                 </div>
-                <div class="col-xl-5 col-lg-4 md-mb-30">
+                <div class="col-xl-5 col-lg-4 md-mb-30 d-none d-lg-block">
                     <div class="rs-contact mod1">
                         <div class="contact-wrap">
                             <div class="content-part mb-25">

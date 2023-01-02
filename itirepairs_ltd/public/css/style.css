@@ -138,6 +138,17 @@ h6 {
   margin: 0 0 26px;
   line-height: 1.2;
 }
+h1.line,
+h2.line,
+h3.line,
+h4.line,
+h5.line,
+h6.line {
+  font-family: 'Livvic', sans-serif;
+  color: #101010;
+  margin: 0 0 15px;
+  line-height: 1.2;
+}
 h1 {
   font-size: 70px;
   font-weight: 700;
@@ -2597,6 +2608,7 @@ blockquote cite:before {
 .full-width-header .rs-header.style2 .menu-area .main-menu .rs-menu ul.sub-menu li a {
   height: unset;
   line-height: 16px;
+  text-align: center;
 }
 .full-width-header .rs-header.style2 .menu-area .main-menu .rs-menu ul.sub-menu li a:hover {
   color: #106eea;
@@ -6631,7 +6643,7 @@ body .search-modal .close:hover {
   background-color: #182AEE45;
   border-radius: 10px 10px 50px 10px;
   position: relative;
-  height: 300px;
+  height: 400px;
 }
 .rs-process.modify1 .rs-addon-number .number-text .number-area {
   font-size: 41px;
@@ -10085,7 +10097,7 @@ body .search-modal .close:hover {
   background-position: center;
 }
 .rs-footer .footer-top {
-  padding: 20px 0 10px;
+  padding: 20px 0 0 0;
 }
 .rs-footer .footer-top .footer-logo img {
   height: 40px;
@@ -10552,7 +10564,7 @@ body .search-modal .close:hover {
   animation: sk-scaleout 1s infinite ease-in-out;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 42.5%;
   transform: translate(-50%, -50%);
 }
 .loader.orange-loader .loader-container {
@@ -10946,20 +10958,72 @@ body .search-modal .close:hover {
   height: 150px;
   border: #000 0.5px solid;
   margin: 0px !important;
+  padding: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.relation-box .partner-item .logo-img a {
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.relation-box .partner-item .logo-img a .hover-logo {
+  transition: all 0.3s ease-in-out;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  filter: grayscale(100%);
+}
+.relation-box .partner-item .logo-img a .main-logo {
+  filter: grayscale(100%);
+  transition: all 0.3s ease-in-out;
+  display: block;
+}
+.relation-box .partner-item .logo-img a:hover .hover-logo {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: block;
+  opacity: 3;
+  visibility: visible;
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  transform: translateY(0%);
+  filter: grayscale(0%);
+}
+.relation-box .partner-item .logo-img a:hover .main-logo {
+  display: block;
+  visibility: hidden;
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+  filter: grayscale(100%);
+}
+
 .box{
   border: #000 0.5px solid;
 }
 .sm-p-10{
   padding: unset;
 }
+
+.visible {
+  visibility: visible;
+}
 @media(max-width: 992px)
 {
   .rs-process.modify1 .rs-addon-number .number-text {
-    height: 400px;
+    height: 500px;
   }
   .li-bold{
     /* font-weight: bold;  */
@@ -10981,6 +11045,14 @@ body .search-modal .close:hover {
     float: left;
     width: 40%;
     height: 50%;
+    margin-right: 10px;
+  }
+
+  .image-3dc{
+    border-radius: 10px;
+    float: left;
+    width: 40%;
+    height: 60%;
     margin-right: 10px;
   }
 
@@ -11016,11 +11088,14 @@ body .search-modal .close:hover {
     width: auto;
     height: 80px;
   }
+  .img-show{
+    display:block;
+  }
 }
 @media(max-width: 576px)
 {
   .rs-process.modify1 .rs-addon-number .number-text {
-    height: 280px;
+    height: 270px;
   }
   .li-bold{
     /* font-weight: bold;  */
@@ -11041,7 +11116,7 @@ body .search-modal .close:hover {
     border-radius: 10px;
     float: left;
     width: 40%;
-    height: 30%;
+    height: 40%;
     margin-right: 10px;
   }
 
@@ -11066,5 +11141,53 @@ body .search-modal .close:hover {
     height: 120px;
     border: #000 1px solid;
   }
+
+  .img-show{
+    display:block;
+  }
 }
 
+@media(max-width: 480px)
+{
+  .img-show{
+    display:none;
+  }
+
+  .rs-footer .footer-top p {
+    margin: 10px 0 0;
+    position: relative;
+  }
+
+  .header-bottom
+  {
+    margin-bottom: 10px !important;
+  }
+}
+
+@media(max-width: 406px)
+{
+  .xs-30{
+    padding-bottom: 0px;
+  }
+}
+@media screen and (max-width: 379px)
+{
+  .rs-process.modify1 .rs-addon-number .number-text {
+    height: 400;
+  }
+
+  .visible {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 440px) and (min-width: 380px) {
+  .rs-process.modify1 .rs-addon-number .number-text {
+    height: 300px;
+  }
+}
+@media screen and (min-width: 1300px)
+{
+  .rs-process.modify1 .rs-addon-number .number-text {
+    height: 360px;
+  }
+}
